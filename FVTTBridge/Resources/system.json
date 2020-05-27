@@ -1,0 +1,21 @@
+{
+  "name": "FVTTBridge",
+  "title": "Bridge Devkit Test",
+  "description": "TBD",
+  "version": 0.1,
+  "minimumCoreVersion": "0.4.4",
+  "templateVersion": 2,
+  "author": "Jeff Kesselman",
+  "scripts":  ["module/bridge.js", "module/bridge_console.js","module/bridge.meta.js","newtonsoft.json.js" ], 
+  "esmodules": [ "module/FVTTBridge.js" ],
+  "styles": [ "styles/simple.css" ],
+  "packs": [],
+  "initiative": "1d20",
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "str",
+  "secondaryTokenAttribute": "con",
+  "url": "",
+  "manifest": "",
+  "download": ""
+}
