@@ -15,5 +15,10 @@ class ActorSheetGlue extends ActorSheet {
         return options;
     }
 
-    
+    activateListeners(html) {
+        super.activateListeners(html);
+        this.BridgeActorSheet.ActivateListeners(html);
+    }
+
+
 }
