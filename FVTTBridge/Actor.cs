@@ -1,18 +1,17 @@
-﻿using Bridge;
-using Newtonsoft.Json;
-using System;
-using Bridge.Html5;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace FVTTBridge
 {
-
-    [External]
-    [Namespace(false)]
     public class Actor
     {
-        public virtual dynamic prepareData()
+        public virtual dynamic PrepareData(dynamic data)
         {
-            return default(object); // stub not actually generated
+            Console.WriteLine(">>> PrepareData");
+            return data;
         }
     }
 }

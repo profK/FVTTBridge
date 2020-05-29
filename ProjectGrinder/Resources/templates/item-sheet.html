@@ -1,0 +1,99 @@
+﻿form class="{{cssClass}}" autocomplete="off">
+<header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+    <div class="header-fields">
+        <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name" /></h1>
+    </div>
+</header>
+<!-- data lists -->
+<datalist id=skills_list>
+    {{#each data.all_skills}}
+    <option> {{this}} </option>
+    {{/each}}
+</datalist>
+<datalist id="stats_list">
+    {{#each data.all_stats}}
+    <option> {{this}} </option>
+    {{/each}}
+</datalist>
+{{!-- Sheet Tab Navigation --}}
+<nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="actions">Actions</a>
+    <a class="item" data-tab="description">Description</a>
+</nav>
+
+{{!-- Sheet Body --}}
+
+<section class="sheet-body">
+    {{!-- Actions Tab --}}
+    <div class="tab actions" data-group="primary" data-tab="actions">
+        <table style="width:600px; float: left; margin: 5px; overflow:hidden">
+            <col width="100px" />
+            <col width="50px" />
+            <col width="50px" />
+            <col width="50px" />
+            <col width="50px" />
+            <thead>
+                <tr>
+                    <th>Action</th>
+                    <th>Stat</th>
+                    <th>Skill</th>
+                    <th>Adds</th>
+                    <th>Roll</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                {{#if data.isGM}}
+                {{#each data.actions}}
+                <tr>
+                    <td>
+                        <input name="data.actions.{{@key}}.name" type="text" value="{{name}}"
+                               placeholder="Name" />
+                    </td>
+                    <td>
+                        <input class="clear_pulldown" name="data.actions.{{@key}}.stat"
+                               value="{{stat}}" type=text list=stats_list
+                               min-width="15px" width="30" />
+                    </td>
+                    <td>
+                        <input class="clear_pulldown" name="data.actions.{{@key}}.skill"
+                               value="{{skill}}" type=text list=skills_list
+                               min-width="15px" width="30" />
+                    </td>
+                    <td>
+                        <input type="text" name="data.actions.{{@key}}.adds" value="{{adds}}" data-dtype="Number"
+                               min-width="15px" width="30">
+                    </td>
+                    {{/each}}
+                </tr>
+                {{else}}
+                {{#each data.actions}}
+                <tr>
+                    <td>
+                        <Button id="action_roll_button">{{name}}</Button>
+                    </td>
+                    <td>
+                        {{stat}}
+                    </td>
+                    <td>
+                        {{skill}}
+                    </td>
+                    <td>
+                        {{adds}}
+                    </td>
+                    {{/each}}
+                    {{/if}}
+            </tbody>
+        </table>
+        <button id="add_action_button">Add Action</button>
+    </div>
+
+    {{!-- Description Tab --}}
+    <div class="tab" data-group="primary" data-tab="description">
+        {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+    </div>
+
+
+</section>
+</form>

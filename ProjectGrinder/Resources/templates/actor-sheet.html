@@ -1,0 +1,328 @@
+﻿<form id="pgactor_form" class="{{cssClass}}" autocomplete="off">
+  
+    {{!-- Sheet Header --}}
+    <header class="sheet-header">
+        <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100" />
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name" /></h1>
+        </div>
+    </header>
+    {{!-- Data Lists --}}
+    <datalist id=skills_list>
+        {{#each data.all_skills}}
+        <option> {{this}} </option>
+        {{/each}}
+    </datalist>
+    <datalist id=my_skills_list>
+        {{#each data.skills}}
+        <option> {{@key}} </option>
+        {{/each}}
+    </datalist>
+    <datalist id="stats_list">
+        {{#each data.stats}}
+        <option> {{@key}} </option>
+        {{/each}}
+    </datalist>
+    <datalist id="convictions_list">
+        {{#each data.convictions}}
+        <option> {{name}} </option>
+        {{/each}}
+    </datalist>
+    <datalist id="gifts_list">
+        {{#each data.gifts}}
+        <option> {{name}} </option>
+        {{/each}}
+    </datalist>
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="attributes">Statistics</a>
+        <a class="item" data-tab="skills">Skills</a>
+        <a class="item" data-tab="gifts&flaws">Gifts and Flaws</a>
+        <a class="item" data-tab="items">Items</a>
+        <div>
+            <button id="roll_button">Roll Check</button>
+            <dialog id="roll_dialog" style="width:200px">
+                <label for="dialog_roll_stat">Statistic</label>
+                <input id="dialog_roll_stat" class="clear_pulldown" type=text list=stats_list
+                       min-width="15px" width="30" />
+                <label for="dialog_roll_skill">Skill</label>
+                <input id="dialog_roll_skill" class="clear_pulldown" type=text list=my_skills_list
+                       min-width="15px" width="30" />
+                <label for="dialog_roll_conviction">Conviction</label>
+                <input id="dialog_roll_conviction" class="clear_pulldown" type=text list=convictions_list
+                       min-width="15px" width="30" />
+                <div style="display:flex; flex-direction: row">
+                    <div>
+                        <label for="dialog_roll_gift">Gift</label>
+                        <input id="dialog_roll_gift" class="clear_pulldown" type=text list=gifts_list
+                               min-width="50px" style="flex:auto;" />
+                    </div>
+                    <div>
+                        <label for="dialog_roll_gift_d6">D6</label>
+                        <input id="dialog_roll_gift_d6" class="clear_pulldown" type=text data-dtype="Number"
+                               min-width="15px" style="flex:none; width:50px;" />
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 10px;margin-bottom: 10px">
+                    <label for="dialog_roll_dn">Difficulty (DN)</label>
+                    <input id="dialog_roll_dn" type=text data-dtype="Number"
+                           min-width="15px" style="width:30px;" />
+                </div>
+                <div style="display:flex; flex-direction: row">
+                    <button id="dialog_roll_cancel_button">CANCEL</button>
+                    <button id="dialog_roll_button">ROLL</button>
+                </div>
+            </dialog>
+        </div>
+    </nav>
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        {{!-- Attributes Tab --}}
+        <div class="tab attributes" data-group="primary" data-tab="attributes">
+            <table style="width:280px; float: left; margin: 5px; overflow:hidden">
+                <col width="80">
+                <col width="20">
+                <col width="20">
+                <col width="20">
+                <col width="50">
+                <thead>
+                    <tr>
+                        <th>Statistic</th>
+                        <th>Value</th>
+                        <th>Damage</th>
+                        <th>Item Adds</th>
+                        <th>Roll</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each data.stats}}
+                    <tr>
+                        <td>  {{@key}}</td>
+                        <td>
+                            <input type="text" name="data.stats.{{@key}}.value" value="{{value}}" data-dtype="Number" min-width="15"
+                                   width="30">
+                        </td>
+                        <td>
+                            <input type="text" name="data.stats.{{@key}}.damage" value="{{damage}}" data-dtype="Number">
+                        </td>
+                        <td>
+                            <input readonly type="text" data-dtype="Number">
+                        </td>
+                        <td style="text-align:center">
+                            <button class="roll_stat_button" data-statname="{{@key}}">
+                                {{d8}}D8{{plusstr}}
+                            </button>
+                        </td>
+
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+            <table style="width:270px; float: left; margin: 5px; overflow:hidden">
+                <col width="90px" />
+                <col width="50px" />
+                <col width="50px" />
+                <col width="80" />
+                <thead>
+                    <tr>
+                        <th>Convictions</th>
+                        <th></th>
+                        <th></th>
+                        <th>Advancement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each data.convictions}}
+                    <tr>
+                        <td colspan="2">
+                            <label for="conviction.name.{{@index}}">Name:</label>
+                            <input id="conviction.name.{{@index}}" type="text" name="data.convictions.{{@index}}.name"
+                                   value="{{name}}" data-dtype="String"
+                                   style="display: inline-block; padding-right: 10px;">
+                        </td>
+                        <td>
+                            <label for="conviction.d6.{{@index}}">D6:</label>
+                            <input id="conviction.d6.{{@index}}" type="text" name="data.convictions.{{@index}}.d6"
+                                   value="{{d6}}" data-dtype="Number"
+                                   style="display: inline-block">
+                        </td>
+                        <td rowspan="2">
+                            <fieldset id="conviction.adv.{{@index}}" min-width="50px" width="50px">
+                                <input type="checkbox" />
+                                <input type="checkbox" />
+                                <input type="checkbox" />
+                                <input type="checkbox" />
+                                <input type="checkbox" />
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <textarea name="data.convictions.{{@index}}.text" rows="4"
+                                      data-dtype="String">{{text}}</textarea>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+
+        {{!-- Skills Tab --}}
+        <div class="tab skills" data-group="primary" data-tab="skills">
+            <table style="width:550px; float: left; margin: 5px; overflow:hidden">
+                <col width="100px">
+                <col width="30px">
+                <col width="100px">
+                <col width="75px">
+                <col width="150px">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>D6</th>
+                        <th>Stat</th>
+                        <th>Roll</th>
+                        <th>Advancement </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each data.skills}}
+                    <tr>
+                        <td>
+                            {{@key}}
+                        </td>
+                        <td>
+                            <input type="text" name="data.skills.{{@key}}.d6" value="{{d6}}" data-dtype="Number"
+                                   min-width="15px" width="30">
+                        </td>
+                        <td>
+                            <input class="clear_pulldown" name="data.skills.{{@key}}.current_stat"
+                                   value="{{current_stat}}" type=text list=stats_list
+                                   min-width="15px" width="30" />
+                        </td>
+                        <td style="text-align:center">
+                            <button class="roll_skill_button" data-skillname="{{@key}}">
+                                {{d8}}D8+{{d6}}D6{{plusstr}}
+                            </button>
+                        </td>
+                        <td>
+                            <fieldset min-width="50px" width="50px">
+                                <input type="checkbox" />
+                                <input type="checkbox" />
+                                <input type="checkbox" />
+                                <input type="checkbox" />
+                                <input type="checkbox" />
+                            </fieldset>
+                        </td>
+                    </tr>
+                    {{/each}}
+                    <tr>
+                        <td> <input id="skill_pulldown" type=text list=skills_list /> </td>
+                        <td colspan="4">
+                            <Button id="add_skill_button">Add Skill</Button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        {{!-- Gifts and Flaws --}}
+        <div class="tab gifts&flaws" data-group="primary" data-tab="gifts&flaws">
+            <table style="width:240px; float: left; margin: 5px; overflow:hidden">
+                <col width="100px" />
+                <col width="50px" />
+                <col width="50px" />
+                <thead>
+                    <tr>
+                        <th>Gifts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each data.gifts}}
+                    <tr>
+                        <td colspan="3">
+                            <label for="gifts.name.{{@index}}">Name:</label>
+                            <input id="gifts.name.{{@index}}" type="text" name="data.gifts.{{@index}}.name"
+                                   value="{{name}}" data-dtype="String"
+                                   style="display: inline-block; padding-right: 10px;">
+                        </td>
+                    <tr>
+                        <td colspan="3">
+                            <textarea name="data.gifts.{{@index}}.text" rows="4"
+                                      data-dtype="String">{{text}}</textarea>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+            <table style="width:240px; float: left; margin: 5px; overflow:hidden">
+                <col width="100px" />
+                <col width="50px" />
+                <col width="50px" />
+                <thead>
+                    <tr>
+                        <th>Flaws</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each data.flaws}}
+                    <tr>
+                        <td colspan="3">
+                            <label for="flaws.name.{{@index}}">Name:</label>
+                            <input id="flaws.name.{{@index}}" type="text" name="data.flaws.{{@index}}.name"
+                                   value="{{name}}" data-dtype="String"
+                                   style="display: inline-block; padding-right: 10px;">
+                        </td>
+                    <tr>
+                        <td colspan="3">
+                            <textarea name="data.flaws.{{@index}}.text" rows="4"
+                                      data-dtype="String">{{text}}</textarea>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+            <table style="width:60px; float: left; margin: 5px; overflow:hidden">
+                <col width="45px">
+                <thead>
+                <th>Gift Points</th>
+                </thead>
+                <tbody>
+                <td>
+                    <input type="text" name="data.giftpoints" value="{{data.giftpoints}}" data-dtype="Number">
+                </td>
+                </tbody>
+            </table>
+        </div>
+
+        {{!-- Biography Tab --}}
+        <div class="tab biography active" data-group="primary" data-tab="description">
+            {{editor content=data.biography target="data.biography" button=true owner=owner editable=editable}}
+        </div>
+        {{!-- Owned Items Tab --}}
+        <div class="tab items" data-group="primary" data-tab="items">
+            <dialog id="roll_action_dialog" style="width:200px">
+                Roll {{data.current_roll.action_name}}
+            </dialog>
+            <ol class="items-list">
+                {{#each actor.items as |item itemid|}}
+                <li class="item flexrow" data-item-id="{{item._id}}">
+                    <img src="{{item.img}}" title="{{item.name}}" width="50" height="24" />
+                    <h4 class="item-name">{{item.name}}</h4>
+                    {{log item}}
+                    {{#each item.data.actions as |action actionid|}}
+                    <button class="action_button" data-actionkey="{{actionid}}" data-itemkey="{{itemid}}"
+                            style="height:24px;display:flex;flex-direction: column;justify-content: center">
+                        {{name}}
+                    </button>
+                    {{/each}}
+                    <div class="item-controls">
+                        <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+                        <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+        </div>
+    </section>
+
+</form>

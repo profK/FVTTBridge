@@ -9,6 +9,6 @@ namespace FVTTBridge
     public static class Actors
     {
         public static void unregisterSheet(string sheetName, Type sheetToRemove){}
-        public static void registerSheet(string sheetName, Type sheetToAdd) { }
+        public static void registerSheet(string sheetName, Type sheetToAdd, dynamic sheetOptions) { }
     }
 }

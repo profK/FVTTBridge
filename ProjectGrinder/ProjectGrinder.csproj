@@ -10,11 +10,11 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0B5A45F2-80C5-4455-BB8F-61DB60C14E79}</ProjectGuid>
+    <ProjectGuid>{E3ACF14F-EA4A-43DD-AE78-FD3760A6D4B1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FVTTBridge</RootNamespace>
-    <AssemblyName>FVTTBridge</AssemblyName>
+    <RootNamespace>ProjectGrinder</RootNamespace>
+    <AssemblyName>ProjectGrinder</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -36,14 +36,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ActorGlue.cs" />
-    <Compile Include="ActorSheet.cs" />
-    <Compile Include="Actors.cs" />
-    <Compile Include="Actor.cs" />
-    <Compile Include="ActorSheetGlue.cs" />
-    <Compile Include="Hooks.cs" />
+    <Compile Include="PGActor.cs" />
+    <Compile Include="PGActorSheet.cs" />
+    <Compile Include="PGLauncher.cs" />
+    <Compile Include="PGSystem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FoundrySystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="bridge.json" />
@@ -59,15 +56,15 @@
     <Reference Include="Bridge, Version=17.10.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Bridge.Core.17.10.1\lib\net40\Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Bridge.Html5, Version=17.10.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bridge.Html5.17.10.0\lib\net40\Bridge.Html5.dll</HintPath>
-    </Reference>
-    <Reference Include="Bridge.jQuery2, Version=2.24.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bridge.jQuery.2.24.0\lib\net40\Bridge.jQuery2.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=1.17.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Bridge.Newtonsoft.Json.1.17.0\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FVTTBridge\FVTTBridge.csproj">
+      <Project>{0b5a45f2-80c5-4455-bb8f-61db60c14e79}</Project>
+      <Name>FVTTBridge</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\module\ActorGlue.js">
@@ -76,7 +73,14 @@
     <Content Include="Resources\module\ActorSheetGlue.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\module\Glue.js" />
     <Content Include="Resources\styles\simple.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\templates\actor-sheet.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\templates\item-sheet.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

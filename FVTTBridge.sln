@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30114.128
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FVTTBridge", "FVTTBridge\FVTTBridge.csproj", "{0B5A45F2-80C5-4455-BB8F-61DB60C14E79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectGrinder", "ProjectGrinder\ProjectGrinder.csproj", "{E3ACF14F-EA4A-43DD-AE78-FD3760A6D4B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FVTTBridgeTest", "FVTTBridgeTest\FVTTBridgeTest.csproj", "{2930A3E9-18C6-4659-B143-02F15CBCDB54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{0B5A45F2-80C5-4455-BB8F-61DB60C14E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B5A45F2-80C5-4455-BB8F-61DB60C14E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B5A45F2-80C5-4455-BB8F-61DB60C14E79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3ACF14F-EA4A-43DD-AE78-FD3760A6D4B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3ACF14F-EA4A-43DD-AE78-FD3760A6D4B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3ACF14F-EA4A-43DD-AE78-FD3760A6D4B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3ACF14F-EA4A-43DD-AE78-FD3760A6D4B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2930A3E9-18C6-4659-B143-02F15CBCDB54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2930A3E9-18C6-4659-B143-02F15CBCDB54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2930A3E9-18C6-4659-B143-02F15CBCDB54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2930A3E9-18C6-4659-B143-02F15CBCDB54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
