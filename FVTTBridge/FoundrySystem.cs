@@ -33,9 +33,14 @@ namespace FVTTBridge
             return new Actor();
         }
 
-        public virtual ActorSheet MakeActorSheet()
+        public virtual ActorSheet MakeActorSheet(ActorSheetGlue glue)
         {
-            return new ActorSheet();
+            return new ActorSheet(glue);
+        }
+
+        public virtual dynamic GetOptions(dynamic options)
+        {
+            return options;
         }
 
 

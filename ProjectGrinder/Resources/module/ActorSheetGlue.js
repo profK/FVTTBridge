@@ -4,13 +4,13 @@
 
 
 class ActorSheetGlue extends ActorSheet {
-    static _ProxyActor;
+    static _ProxyActorSheet;
 
     static get ProxyActor() {
-        if (ActorSheetGlue._ProxyActor === undefined) {
-            ActorSheetGlue._ProxyActor = FVTTBridge.FoundrySystem.Instance.MakeActorSheet();
+        if (ActorSheetGlue._ProxyActorSheet === undefined) {
+            ActorSheetGlue._ProxyActorSheet = FVTTBridge.FoundrySystem.Instance.MakeActorSheet();
         }
-        return ActorSheetGlue._ProxyActor;
+        return ActorSheetGlue._ProxyActorSheet;
     }
 
     constructor(...args) {

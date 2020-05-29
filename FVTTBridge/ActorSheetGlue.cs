@@ -9,6 +9,23 @@ namespace FVTTBridge
     [Namespace(false)]
     public class ActorSheetGlue
     {
+        public dynamic actor;
+        public static dynamic defaultOptions;
 
+        public void deleteOwnedItem(string itemId)
+        {
+            //dummy not generated
+        }
+
+        public void render(bool b)
+        {
+            //dummy not generated
+        }
+
+        public dynamic getData()
+        {
+            //dummy not generated
+            return null;
+        }
     }
 }

@@ -3,21 +3,17 @@
 
 
 class ActorSheetGlue extends ActorSheet {
-
-    prepareData() {
-        if (typeof this.BridgeActor === 'undefined') {
-            this.BridgeActor = FVTTBridge.FoundrySystem.Instance.MakeActor();
-        }
-        super.prepareData();
-        this.data = this.BridgeActor.PrepareData(this.data);
+    constructor(...args) {
+        super(...args);
+        this.BridgeActorSheet = FVTTBridge.FoundrySystem.Instance.MakeActorSheet(this);
     }
+    
 
     static get defaultOptions() {
-        if (typeof this.BridgeActorSheet === 'undefined') {
-            this.BridgeActorSheet = FVTTBridge.FoundrySystem.Instance.MakeActorSheet();
-        }
         var options = super.defaultOptions;
-        options = this.BridgeActorSheet.GetOptions(options);
+        options = FVTTBridge.FoundrySystem.Instance.GetOptions(options);
         return options;
     }
+
+    
 }

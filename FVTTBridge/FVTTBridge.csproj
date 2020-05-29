@@ -42,8 +42,10 @@
     <Compile Include="Actor.cs" />
     <Compile Include="ActorSheetGlue.cs" />
     <Compile Include="Hooks.cs" />
+    <Compile Include="HTML\Tabs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FoundrySystem.cs" />
+    <Compile Include="Utilities\Roll.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="bridge.json" />
