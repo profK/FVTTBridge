@@ -39,12 +39,12 @@ namespace ProjectGrinder
             if (!Options.editable) return;
 
             // Update Inventory Item
-            /*
+            
             htmlObject.Find(".item-edit").Click(ev => {
                 jQuery li = jQuery.Select(ev.CurrentTarget).Parents(".item");
                 Item item = Actor.getOwnedItem(li.Data("itemId"));
                 item.sheet.render(true);
-            });*/
+            });
 
             
             // Delete Inventory Item
@@ -60,46 +60,62 @@ namespace ProjectGrinder
                 DoStatRoll(button.GetAttribute("data-statname"));
             });
 
-            /*
-            // hook skil lroll buttons
-            html.find('.roll_skill_button').click(ev => {
-                const button = ev.currentTarget
-              this.DoSkillRoll(button.getAttribute('data-skillname'))
+           
+            htmlObject.Find(".roll_skill_button").Click(ev => {
+                    Element button = ev.CurrentTarget;
+                    DoSkillRoll(button.GetAttribute("data-skillname"));
             });
 
             // Clear skill pulldown
-            $("#skill_pulldown").click(ev => {
-                 console.log("click")
-              $(ev.currentTarget).val("")
+            htmlObject.Find("#skill_pulldown").Click(ev =>
+            {
+                htmlObject.Find(ev.CurrentTarget).Val("");
             });
 
-                    var clear_pulldowns = document.getElementsByClassName("clear_pulldown")
-            for (let el of clear_pulldowns)
-                    {
-                        el.addEventListener("click", ev => {
-                $(ev.currentTarget).val("")
-                        }, false)
+            HTMLCollection clear_pulldowns = Document.GetElementsByClassName("clear_pulldown");
+            foreach (Element el in clear_pulldowns)
+            {
+                el.AddEventListener("click", ev => { htmlObject.Find(ev.CurrentTarget.ToString()).Val(""); }, false);
             }
 
-            $("#add_skill_button").click(ev => {
-                 var skillname = $("#skill_pulldown")
-              console.log("add skill " + skillname.val())
-              this.DoAddSkill(skillname.val())
-            })
+            htmlObject.Find("#add_skill_button").Click(ev =>
+                {
+                    jQuery skillname = htmlObject.Find("#skill_pulldown");
+                    Console.WriteLine("add skill " + skillname.Val());
+                    DoAddSkill(skillname.Val());
+            });
 
-            $("#roll_button").click(ev => {
-                 console.log('show roll dialog')
-              $("#roll_dialog").show()
-            })
+            htmlObject.Find("#roll_button").Click(ev =>
+            {
+                Console.WriteLine("show roll dialog");
+                htmlObject.Find("#roll_dialog").Show();
+            });
 
-            var action_buttons = document.getElementsByClassName("action_button")
-            for (let el of action_buttons)
-                    {
-                        el.addEventListener("click", ev => {
-                            const button = ev.currentTarget
-                          this.DoItemAction(button.getAttribute('data-itemkey'),
-                    button.getAttribute('data-actionkey'))
-                        })*/
+            HTMLCollection action_buttons = Document.GetElementsByClassName("action_button");
+            foreach (Element el in action_buttons)
+            {
+                el.AddEventListener("click", ev =>
+                {
+                    Element button = (Element) ev.CurrentTarget;
+                    DoItemAction(button.GetAttribute("data-itemkey"),
+                        button.GetAttribute("data-actionkey"));
+                });
+            }
+        }
+
+        private void DoAddSkill(string val)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void DoItemAction(string getAttribute, string s)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void DoSkillRoll(string getAttribute)
+        {
+            throw new NotImplementedException();
         }
 
         private void DoStatRoll(string statname)

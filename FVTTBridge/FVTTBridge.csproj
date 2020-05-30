@@ -39,9 +39,11 @@
     <Compile Include="ActorGlue.cs" />
     <Compile Include="Bindings\ActorSheet.cs" />
     <Compile Include="Bindings\Actors.cs" />
-    <Compile Include="Actor.cs" />
+    <Compile Include="Bindings\Actor.cs" />
     <Compile Include="ActorSheetGlue.cs" />
+    <Compile Include="Bindings\BaseEntitySheet.cs" />
     <Compile Include="Bindings\Hooks.cs" />
+    <Compile Include="Bindings\Item.cs" />
     <Compile Include="HTML\Tabs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FoundrySystem.cs" />
