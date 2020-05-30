@@ -105,17 +105,17 @@ namespace ProjectGrinder
 
         private void DoAddSkill(string val)
         {
-            throw new NotImplementedException();
+           Console.WriteLine("add skill "+val);
         }
 
-        private void DoItemAction(string getAttribute, string s)
+        private void DoItemAction(string itemKey, string actionKey)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Do item,action: "+itemKey+","+actionKey);
         }
 
-        private void DoSkillRoll(string getAttribute)
+        private void DoSkillRoll(string skillName)
         {
-            throw new NotImplementedException();
+           Console.WriteLine("Do skil roll: "+skillName);
         }
 
         private void DoStatRoll(string statname)

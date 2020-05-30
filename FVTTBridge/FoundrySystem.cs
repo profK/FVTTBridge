@@ -10,11 +10,13 @@ namespace FVTTBridge.Bindings
     static public class Globals
     {
         static public  dynamic CONFIG;
+        static public dynamic GAME;
 
         [Init(InitPosition.Bottom)]
         public static void TopInit()
         {
             CONFIG = Global.Get("CONFIG");
+            GAME = Global.Get("game");
         }
     }
 

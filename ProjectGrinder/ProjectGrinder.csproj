@@ -38,6 +38,7 @@
   <ItemGroup>
     <Compile Include="PGActor.cs" />
     <Compile Include="PGActorSheet.cs" />
+    <Compile Include="PGItemSheet.cs" />
     <Compile Include="PGLauncher.cs" />
     <Compile Include="PGSystem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

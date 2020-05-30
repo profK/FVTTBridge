@@ -13,7 +13,11 @@ namespace ProjectGrinder
             {
                 data.name = "New Actor";
             }
-           
+
+            data.data.all_stats = Globals.CONFIG.stats;
+            data.data.all_skills = Globals.CONFIG.skills;
+            data.data.isGM = Globals.GAME.user.isGM;
+
             //calculate stat roll
             //calc d8s
             string[] propNames = GetOwnPropertyNames(data.data.stats);
