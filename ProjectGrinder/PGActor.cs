@@ -1,5 +1,5 @@
 ﻿using System;
-using FVTTBridge;
+using FVTTBridge.Bindings;
 using System.Reflection;
 
 namespace ProjectGrinder

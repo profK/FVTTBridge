@@ -4,7 +4,7 @@ using System;
 using Bridge.Html5;
 
 
-namespace FVTTBridge
+namespace FVTTBridge.Bindings
 {
    
     static public class Globals
@@ -28,6 +28,7 @@ namespace FVTTBridge
     {
         private static FoundrySystem Instance;
 
+    
         public virtual Actor MakeActor()
         {
             return new Actor();
@@ -46,8 +47,8 @@ namespace FVTTBridge
 
         public FoundrySystem()
         {
+            FoundrySystem.Instance = this;
             Hooks.once("init",SystemInit);
-            Instance = this;
         }
 
         protected virtual void SystemInit()

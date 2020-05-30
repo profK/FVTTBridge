@@ -1,5 +1,5 @@
 ﻿using System;
-using FVTTBridge;
+using FVTTBridge.Bindings;
 
 namespace FVTTBridgeTest
 {
@@ -11,7 +11,7 @@ namespace FVTTBridgeTest
         }
     }
 
-    public class MySystem : FVTTBridge.FoundrySystem
+    public class MySystem : FVTTBridge.Bindings.FoundrySystem
     {
        
        

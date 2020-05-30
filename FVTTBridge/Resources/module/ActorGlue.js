@@ -6,7 +6,7 @@ class ActorGlue extends Actor {
 
     prepareData() {
         if (typeof this.BridgeActor === 'undefined') {
-            this.BridgeActor = FVTTBridge.FoundrySystem.Instance.MakeActor();
+            this.BridgeActor = FVTTBridge.Bindings.FoundrySystem.Instance.MakeActor();
         }
         super.prepareData();
         this.data = this.BridgeActor.PrepareData(this.data);

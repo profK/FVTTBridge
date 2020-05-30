@@ -1,4 +1,4 @@
-﻿using FVTTBridge;
+﻿using FVTTBridge.Bindings;
 using System;
 using System.Collections.Generic;
 using System.Linq;

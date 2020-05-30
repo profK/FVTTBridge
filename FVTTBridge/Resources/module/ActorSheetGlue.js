@@ -5,13 +5,13 @@
 class ActorSheetGlue extends ActorSheet {
     constructor(...args) {
         super(...args);
-        this.BridgeActorSheet = FVTTBridge.FoundrySystem.Instance.MakeActorSheet(this);
+        this.BridgeActorSheet = FVTTBridge.Bindings.FoundrySystem.Instance.MakeActorSheet(this);
     }
     
 
     static get defaultOptions() {
         var options = super.defaultOptions;
-        options = FVTTBridge.FoundrySystem.Instance.GetOptions(options);
+        options = FVTTBridge.Bindings.FoundrySystem.Instance.GetOptions(options);
         return options;
     }
 

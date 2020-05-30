@@ -4,17 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Bridge;
-using Bridge.jQuery2;
 
-namespace FVTTBridge.Bindings.HTML
+namespace FVTTBridge.Bindings
 {
     [External]
     [Namespace(false)]
-    public class Tabs
+    public class ChatMessage
     {
-        public Tabs(jQuery html, dynamic opts)
+        static void create(dynamic options)
         {
-            //dummy body
-        }
+
+        } 
     }
 }

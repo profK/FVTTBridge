@@ -4,7 +4,7 @@ using System;
 using Bridge.Html5;
 using Bridge.jQuery2;
 
-namespace FVTTBridge
+namespace FVTTBridge.Bindings
 {
 
     public class ActorSheet

@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Bridge.Html5;
 using Bridge.jQuery2;
-using FVTTBridge;
-using FVTTBridge.HTML;
-using FVTTBridge.Utilities;
+using FVTTBridge.Bindings;
+using FVTTBridge.Bindings.HTML;
+using FVTTBridge.Bindings.Bindings;
 
 namespace ProjectGrinder
 {
@@ -107,7 +107,7 @@ namespace ProjectGrinder
             Console.WriteLine("doing roll");
             dynamic data = GetData().data;
             dynamic stat = data.stats[statname];
-            string rollstr = stat.d8.ToString() + "d8";
+            string rollstr = stat.d8.toString() + "d8";
             float modifier = stat.plus - stat.damage;
             if (modifier > 0)
             {
@@ -118,10 +118,11 @@ namespace ProjectGrinder
                 rollstr = rollstr + modifier.ToString();
             }
             Console.WriteLine("rolling "+rollstr);
-            new Roll(rollstr).toMessage();
-            //rollstr.toMessage({
-            //    flavor: "Makes a(n) " + statname + " roll..."
-            //})
+            dynamic opts = new RawJSObject();
+            opts.flavor = "Makes a(n) " + statname + " roll...";
+
+            new Roll(rollstr).toMessage(opts);
+            
         }
 
         public void ClickTabSelect(dynamic clicked)

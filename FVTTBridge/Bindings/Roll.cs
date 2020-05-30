@@ -2,7 +2,7 @@
 
 using Bridge;
 
-namespace FVTTBridge.Utilities
+namespace FVTTBridge.Bindings.Bindings
 {
     [External]
     [Namespace(false)]
@@ -13,7 +13,7 @@ namespace FVTTBridge.Utilities
             // dummy not generated
         }
 
-        public void toMessage()
+        public void toMessage(dynamic opts)
         {
             //dummy not generated
         }

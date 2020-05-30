@@ -1,8 +1,8 @@
-﻿using FVTTBridge;
+﻿using FVTTBridge.Bindings;
 
 namespace ProjectGrinder
 {
-    class PGSystem:FVTTBridge.FoundrySystem
+    class PGSystem:FVTTBridge.Bindings.FoundrySystem
     {
         public override Actor MakeActor()
         {
