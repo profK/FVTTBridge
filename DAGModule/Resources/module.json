@@ -1,0 +1,11 @@
+{
+  "name": "dagmodule",
+  "title": "DAGModule - A hierarchical directed acyclic graph module",
+  "description": "A hierarchical directed acyclic graph databse that is linkable to other foundry objects",
+  "author": "professork",
+  "version": "0.1.0",
+  "minimumCoreVersion": "0.5.0",
+  "scripts": [ "module/bridge.js", "module/bridge_console.js", "module/bridge.meta.js", "module/newtonsoft.json.js", "module/ActorGlue.js", "module/ActorSheetGlue.js", "module/FVTTBridge.js" ],
+  "esmodules": [ "module/DAGModule.js" ],
+  "styles": [ "styles/simple.css" ]
+}

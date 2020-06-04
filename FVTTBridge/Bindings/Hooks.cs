@@ -9,5 +9,7 @@ namespace FVTTBridge.Bindings
     static class Hooks
     {
         public static void once(string hookName,Action hookcb){}
+        public static void on(string hookName, Action hookcb) { }
+        public static void off(string hookName, Action hookcb) { }
     }
 }
