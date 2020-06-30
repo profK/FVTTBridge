@@ -1,6 +1,7 @@
 # FVTTBridge
-A FoundryVTT SDK Binding for Bridge.NET C# in Windows Visual Studio
-Bridge.net is a FOSS C# to Javascript compilerfor Visual Studio  and can be downloaded free from https://bridge.net/
+A FoundryVTT SDK Binding for Bridge.NET C# in Windows Visual Studio.
+
+Bridge.net is a FOSS C# to Javascript compiler for Visual Studio  and can be downloaded free from https://bridge.net/
 
 To build a system and and autoamtically deploy it to your local Foundry install, modify this code to point 
 to your foundry data folder and put it in your project post-build event:
