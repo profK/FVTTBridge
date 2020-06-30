@@ -1,0 +1,12 @@
+{
+  "name": "FVTTBridge",
+  "title": "FVTTBridge - upport for the FVTTBridge Foundry SDK",
+  "description": "This contains common code used by all FVTTBridge systems and modules",
+  "author": "professork",
+  "version": "0.1.0",
+  "minimumCoreVersion": "0.5.0",
+  "scripts": [ "module/bridge.js", "module/bridge_console.js", "module/bridge.meta.js", "module/newtonsoft.json.js", "module/ActorGlue.js", "module/ActorSheetGlue.js", "module/FVTTBridge.js" ],
+  "esmodules": [ ],
+  "styles": [ "styles/simple.css" ]
+
+}

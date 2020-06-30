@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FVTTBridgeTest", "FVTTBridg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAGModule", "DAGModule\DAGModule.csproj", "{8E9B71D5-E415-43BC-AD36-256ACD684573}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FVTTModuleTest", "FVTTModuleTest\FVTTModuleTest.csproj", "{AAE1764F-6F0C-4DA1-A03F-81C584437B6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{8E9B71D5-E415-43BC-AD36-256ACD684573}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E9B71D5-E415-43BC-AD36-256ACD684573}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E9B71D5-E415-43BC-AD36-256ACD684573}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAE1764F-6F0C-4DA1-A03F-81C584437B6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAE1764F-6F0C-4DA1-A03F-81C584437B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAE1764F-6F0C-4DA1-A03F-81C584437B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAE1764F-6F0C-4DA1-A03F-81C584437B6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

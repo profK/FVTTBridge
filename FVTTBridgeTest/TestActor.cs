@@ -15,10 +15,5 @@ namespace FVTTBridgeTest
 
         }
 
-        public override dynamic PrepareData(dynamic data)
-        {
-            data.Skills = new String[] { "foo" };
-            return data;
-        }
     }
 }

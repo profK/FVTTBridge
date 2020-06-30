@@ -1,0 +1,11 @@
+{
+  "name": "FVTTModuleTest",
+  "title": "A test module for FVTTBidge",
+  "description": "A test module for FVTTBidge",
+  "author": "professork",
+  "version": "0.1.0",
+  "minimumCoreVersion": "0.5.0",
+  "scripts": [ "../FVTTBridge/module/bridge.js", "../FVTTBridge/module/bridge_console.js", "../FVTTBridge/module/bridge.meta.js", "../FVTTBridge/module/newtonsoft.json.js", "../FVTTBridge/module/ActorGlue.js", "module/ActorSheetGlue.js", "module/FVTTBridge.js" ], 
+  "esmodules": [ "module/FVTTModuleTest.js" ],
+  "styles": [ "styles/simple.css" ]
+}

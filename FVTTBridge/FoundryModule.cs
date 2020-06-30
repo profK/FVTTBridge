@@ -2,15 +2,16 @@
 using Newtonsoft.Json;
 using System;
 using Bridge.Html5;
+using FVTTBridge.Bindings;
+using System.Collections.Generic;
 
-
-namespace FVTTBridge.Bindings
+namespace FVTTBridge
 {
 
 
     public class FoundryModule
     {
-        private static FoundryModule Instance;
+        private static Dictionary<string, FoundryModule> Instances = new Dictionary<string, FoundryModule>();
 
 
         
@@ -19,10 +20,17 @@ namespace FVTTBridge.Bindings
             return options;
         }
 
+        public FoundryModule Instance
+        {
+            get
+            {
+                return Instances[this.GetType().FullName];
+            }
+        }
 
         public FoundryModule()
         {
-            FoundryModule.Instance = this;
+            FoundryModule.Instances.Add(this.GetType().FullName,this);
             Hooks.on("init", ModuleInit);
             Hooks.on("ready", ModuleReady);
         }

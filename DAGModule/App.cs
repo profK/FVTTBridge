@@ -4,7 +4,7 @@ using System;
 
 namespace DAGModule
 {
-    public class App
+    public class DagMOdul
     {
         public static void Main()
         {

@@ -6,7 +6,7 @@
   "minimumCoreVersion": "0.4.4",
   "templateVersion": 2,
   "author": "Jeff Kesselman",
-  "scripts": [ "module/bridge.js", "module/bridge_console.js", "module/bridge.meta.js","module/newtonsoft.json.js","module/ActorGlue.js","module/ActorSheetGlue.js","module/FVTTBridge.js"], 
+  "scripts": [ "../../modules/FVTTBridge/module/bridge.js", "../../modules/FVTTBridge/module/bridge_console.js", "../../modules/FVTTBridge/module/bridge.meta.js", "../../modules/FVTTBridge/module/newtonsoft.json.js",  "../../modules/FVTTBridge/module/FVTTBridge.js" ], 
   "esmodules": [ "module/FVTTBridgeTest.js" ],
   "styles": [ "styles/simple.css" ],
   "packs": [],

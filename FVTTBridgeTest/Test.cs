@@ -21,6 +21,22 @@ namespace FVTTBridgeTest
             base.SystemInit();
         }
 
-        
+        public override Type ActorType
+        {
+            get
+            {
+                return typeof(TestActor);
+            }
+        }
+
+        public override Type ActorSheetType
+        {
+            get
+            {
+                return typeof(ActorSheet);
+            }
+        }
+
+
     }
 }

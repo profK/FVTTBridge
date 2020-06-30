@@ -63,4 +63,7 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Bridge.Min.17.10.1\build\Bridge.Min.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Bridge.Min.17.10.1\build\Bridge.Min.targets'))" />
   </Target>
+  <PropertyGroup>
+    <PostBuildEvent>rmdir /s  /q C:\Users\jeffp\AppData\Local\FoundryVTT\Data\modules\$(TargetName) &amp; C: &amp; mkdir "\Users\jeffp\AppData\Local\FoundryVTT\Data\modules\$(TargetName)" &amp;&amp;  mkdir "\Users\jeffp\AppData\Local\FoundryVTT\Data\modules\$(TargetName)\module"  &amp;&amp;  xcopy  "$(TargetDir)bridge" "\Users\jeffp\AppData\Local\FoundryVTT\Data\modules\$(TargetName)\module" /E &amp;&amp;  xcopy "$(TargetDir)Resources"  "\Users\jeffp\AppData\Local\FoundryVTT\Data\modules\$(TargetName)"  /E</PostBuildEvent>
+  </PropertyGroup>
 </Project>

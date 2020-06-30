@@ -30,15 +30,31 @@ namespace FVTTBridge.Bindings
     {
         private static FoundrySystem Instance;
 
-    
-        public virtual Actor MakeActor()
+
+        public virtual Type ActorType
         {
-            return new Actor();
+            get
+            {
+                return typeof(Actor);
+            }
         }
 
-        public virtual ActorSheet MakeActorSheet(ActorSheetGlue glue)
+        public virtual Type ActorSheetType
         {
-            return new ActorSheet(glue);
+            get
+            {
+                return typeof(ActorSheet);
+            }
+        }
+
+        public Actor MakeActor()
+        {
+            return Activator.CreateInstance(ActorType) as Actor;
+        }
+
+        public ActorSheet MakeActorSheet()
+        {
+            return Activator.CreateInstance(ActorSheetType) as ActorSheet;
         }
 
         public virtual dynamic GetOptions(dynamic options)
