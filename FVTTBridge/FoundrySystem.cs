@@ -29,6 +29,7 @@ namespace FVTTBridge.Bindings
     public class FoundrySystem
     {
         private static FoundrySystem Instance;
+     
 
 
         public virtual Type ActorType
@@ -47,14 +48,14 @@ namespace FVTTBridge.Bindings
             }
         }
 
-        public Actor MakeActor()
+        public Actor MakeActor(ActorGlue glue)
         {
-            return Activator.CreateInstance(ActorType) as Actor;
+            return Activator.CreateInstance(ActorType,new object[] { glue }) as Actor;
         }
 
-        public ActorSheet MakeActorSheet()
+        public ActorSheet MakeActorSheet(ActorSheetGlue glue)
         {
-            return Activator.CreateInstance(ActorSheetType) as ActorSheet;
+            return Activator.CreateInstance(ActorSheetType,new object[] { glue }) as ActorSheet;
         }
 
         public virtual dynamic GetOptions(dynamic options)
