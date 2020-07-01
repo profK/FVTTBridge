@@ -42,9 +42,15 @@
     <Compile Include="Bindings\Actor.cs" />
     <Compile Include="ActorSheetGlue.cs" />
     <Compile Include="Bindings\BaseEntitySheet.cs" />
+    <Compile Include="Bindings\Compendium.cs" />
+    <Compile Include="Bindings\Entity.cs" />
+    <Compile Include="Bindings\Folder.cs" />
     <Compile Include="Bindings\Hooks.cs" />
     <Compile Include="Bindings\Item.cs" />
     <Compile Include="Bindings\ItemSheet.cs" />
+    <Compile Include="Bindings\Collection.cs" />
+    <Compile Include="Bindings\Token.cs" />
+    <Compile Include="Bindings\User.cs" />
     <Compile Include="FoundryModule.cs" />
     <Compile Include="Glue.cs" />
     <Compile Include="HTML\Tabs.cs" />
@@ -54,6 +60,9 @@
     <Compile Include="Bindings\Roll.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="bridge.json" />
     <None Include="packages.config" />
     <None Include="Resources\module.json">
