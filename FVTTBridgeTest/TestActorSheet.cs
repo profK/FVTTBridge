@@ -10,6 +10,7 @@ namespace FVTTBridgeTest
 {
     class TestActorSheet: ActorSheet
     {
+        public TestActorSheet(ActorSheetGlue glue) : base(glue) { }
         
     }
 }

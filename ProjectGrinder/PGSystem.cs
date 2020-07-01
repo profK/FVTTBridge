@@ -1,4 +1,5 @@
 ﻿using FVTTBridge.Bindings;
+using System;
 
 namespace ProjectGrinder
 {
@@ -22,15 +23,22 @@ namespace ProjectGrinder
                 "Test of Will", "Tracking", "Trick", "Unarmed Combat", "Water Vehicles"
             };
         }
-        public override Actor MakeActor()
+        public override Type ActorType
         {
-           
-            return new PGActor();
+            get
+            {
+                return typeof(PGActor);
+
+            }
         }
 
-        public override ActorSheet MakeActorSheet(ActorSheetGlue glue)
+        public override Type ActorSheetType
         {
-            return new PGActorSheet(glue);
+            get
+            {
+                return typeof(PGActorSheet);
+            }
+           
         }
 
         public override dynamic GetOptions(dynamic options)

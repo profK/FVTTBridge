@@ -14,8 +14,8 @@ namespace FVTTBridge
         {
             Script.Write(@"
 class ActorSheetGlue extends ActorSheet {
-    constructor(...args) {
-        super(...args);
+    constructor(actor,options) {
+        super(actor,options);
         this.BridgeActorSheet = FVTTBridge.Bindings.FoundrySystem.Instance.MakeActorSheet(this);
     }
     
@@ -30,17 +30,19 @@ class ActorSheetGlue extends ActorSheet {
         super.activateListeners(html);
         this.BridgeActorSheet.ActivateListeners(html);
     }
+
+
 }
 
 class ActorGlue extends Actor {
     constructor(...args) {
         super(...args);
-        this.BridgeActor = FVTTBridge.Bindings.FoundrySystem.Instance.MakeActor();
+        this.Actor = FVTTBridge.Bindings.FoundrySystem.Instance.MakeActor();
     }
 
     prepareData() {
         super.prepareData();
-        this.data = this.BridgeActor.PrepareData(this.data);
+        this.data = this.Actor.PrepareData(this.data);
     }
 
 }

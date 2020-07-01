@@ -3,8 +3,8 @@
 
 
 class ActorSheetGlue extends ActorSheet {
-    constructor(...args) {
-        super(...args);
+    constructor(actor,options) {
+        super(actor,options);
         this.BridgeActorSheet = FVTTBridge.Bindings.FoundrySystem.Instance.MakeActorSheet(this);
     }
     

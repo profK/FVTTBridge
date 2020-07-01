@@ -5,12 +5,12 @@
 class ActorGlue extends Actor {
     constructor(...args) {
         super(...args);
-        this.BridgeActor = FVTTBridge.Bindings.FoundrySystem.Instance.MakeActor();
+        this.Actor = FVTTBridge.Bindings.FoundrySystem.Instance.MakeActor();
     }
 
     prepareData() {
         super.prepareData();
-        this.data = this.BridgeActor.PrepareData(this.data);
+        this.data = this.Actor.PrepareData(this.data);
     }
 
 }

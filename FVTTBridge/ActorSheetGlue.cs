@@ -11,6 +11,13 @@ namespace FVTTBridge.Bindings
     {
         public dynamic actor;
         public static dynamic defaultOptions;
+        public dynamic Options { get; }
+
+        public ActorGlue ActorGlue{
+            get {
+                return actor;
+            }
+        }
 
         public void deleteOwnedItem(string itemId)
         {
@@ -26,6 +33,11 @@ namespace FVTTBridge.Bindings
         {
             //dummy not generated
             return null;
+        }
+
+        internal void Render(bool v)
+        {
+           //dummy
         }
     }
 }

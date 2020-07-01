@@ -7,6 +7,10 @@ namespace ProjectGrinder
 
     public class PGActor : Actor
     {
+        public PGActor(ActorGlue glue):base(glue)
+        {
+
+        }
         public override dynamic PrepareData(dynamic data)
         {
             if (data.hasOwnProperty("name") && !data.name)

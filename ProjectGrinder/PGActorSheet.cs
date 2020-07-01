@@ -18,6 +18,7 @@ namespace ProjectGrinder
 
         public PGActorSheet(ActorSheetGlue glue) : base(glue)
         {
+        
         }
 
        
@@ -103,6 +104,7 @@ namespace ProjectGrinder
             }
         }
 
+       
         private void DoAddSkill(string val)
         {
            Console.WriteLine("add skill "+val);
@@ -121,7 +123,7 @@ namespace ProjectGrinder
         private void DoStatRoll(string statname)
         {
             Console.WriteLine("doing roll");
-            dynamic data = GetData().data;
+            dynamic data = getData().data;
             dynamic stat = data.stats[statname];
             string rollstr = stat.d8.toString() + "d8";
             float modifier = stat.plus - stat.damage;

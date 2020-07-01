@@ -10,7 +10,7 @@ namespace FVTTBridgeTest
 {
     class TestActor : Actor
     {
-        public TestActor() : base()
+        public TestActor(ActorGlue glue) : base(glue)
         {
 
         }
