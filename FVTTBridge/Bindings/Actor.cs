@@ -13,12 +13,15 @@ namespace FVTTBridge.Bindings
 
     public class Actor
     {
-        protected ActorGlue Glue { get; private set; }
+        internal ActorGlue Glue { get; set; }
 
+        public Actor() { }
         public Actor(ActorGlue glue)
         {
             Glue = glue;
         }
+
+       
         #region Accessors
         public dynamic config
         {

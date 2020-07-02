@@ -69,7 +69,8 @@ namespace FVTTBridge.Bindings
             throw new NotImplementedException();
         }
 
-        internal Promise deleteEmbeddedEntity(string embeddedName, dynamic data, dynamic options)
+        internal Promise deleteEmbeddedEntity(string embeddedName, dynamic data, dynamic
+            options)
         {
             throw new NotImplementedException();
         }

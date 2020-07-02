@@ -10,9 +10,15 @@ namespace FVTTBridge.Bindings
 
     public class ActorSheet
     {
-        protected ActorSheetGlue Glue
+        internal ActorSheetGlue Glue
         {
-            get; private set;
+            get; set;
+        }
+
+        public ActorSheet() { }
+        public ActorSheet(ActorSheetGlue glue)
+        {
+            Glue = glue;
         }
 
         public dynamic Options
@@ -30,10 +36,7 @@ namespace FVTTBridge.Bindings
                 return Glue.ActorGlue.Actor;
             }
         }
-        public ActorSheet(ActorSheetGlue glue)
-        {
-            Glue = glue;
-        }
+       
        public virtual void ActivateListeners(jQuery html)
         {
 

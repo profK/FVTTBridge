@@ -50,12 +50,16 @@ namespace FVTTBridge.Bindings
 
         public Actor MakeActor(ActorGlue glue)
         {
-            return Activator.CreateInstance(ActorType,new object[] { glue }) as Actor;
+            Actor actor =  Activator.CreateInstance(ActorType) as Actor;
+            actor.Glue = glue;
+            return actor;
         }
 
         public ActorSheet MakeActorSheet(ActorSheetGlue glue)
         {
-            return Activator.CreateInstance(ActorSheetType,new object[] { glue }) as ActorSheet;
+            ActorSheet actorSheet = Activator.CreateInstance(ActorSheetType) as ActorSheet;
+            actorSheet.Glue = glue;
+            return actorSheet;
         }
 
         public virtual dynamic GetOptions(dynamic options)

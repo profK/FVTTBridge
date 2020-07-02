@@ -37,23 +37,36 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="ActorGlue.cs" />
+    <Compile Include="Bindings\AmbientLight.cs" />
+    <Compile Include="Bindings\ActorDirectory.cs" />
     <Compile Include="Bindings\ActorSheet.cs" />
     <Compile Include="Bindings\Actors.cs" />
     <Compile Include="Bindings\Actor.cs" />
     <Compile Include="ActorSheetGlue.cs" />
+    <Compile Include="Bindings\Application.cs" />
     <Compile Include="Bindings\BaseEntitySheet.cs" />
     <Compile Include="Bindings\Compendium.cs" />
+    <Compile Include="Bindings\ControlIcon.cs" />
     <Compile Include="Bindings\Entity.cs" />
+    <Compile Include="Bindings\EntityCollection.cs" />
     <Compile Include="Bindings\Folder.cs" />
+    <Compile Include="Bindings\FormApplication.cs" />
     <Compile Include="Bindings\Hooks.cs" />
     <Compile Include="Bindings\Item.cs" />
     <Compile Include="Bindings\ItemSheet.cs" />
     <Compile Include="Bindings\Collection.cs" />
+    <Compile Include="Bindings\MouseInteractionManager.cs" />
+    <Compile Include="Bindings\Scene.cs" />
+    <Compile Include="Bindings\SidebarDirectory.cs" />
+    <Compile Include="Bindings\Socket.cs" />
     <Compile Include="Bindings\Token.cs" />
     <Compile Include="Bindings\User.cs" />
     <Compile Include="FoundryModule.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Glue.cs" />
     <Compile Include="HTML\Tabs.cs" />
+    <Compile Include="Bindings\PlaceableObject.cs" />
+    <Compile Include="Bindings\PlaceablesLayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FoundrySystem.cs" />
     <Compile Include="Bindings\ChatMessage.cs" />
@@ -81,6 +94,18 @@
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=1.17.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Bridge.Newtonsoft.Json.1.17.0\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Retyped.Core, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Retyped.dom, Version=2.8.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll</HintPath>
+    </Reference>
+    <Reference Include="Retyped.es5, Version=2.8.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll</HintPath>
+    </Reference>
+    <Reference Include="Retyped.pixi.js, Version=4.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Retyped.pixi.js.4.7.6733\lib\net40\Retyped.pixi.js.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
