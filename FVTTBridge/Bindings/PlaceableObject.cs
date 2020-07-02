@@ -40,35 +40,35 @@ namespace FVTTBridge.Bindings
 
        
 
-        public bool can(User user, string action)
+        public virtual bool can(User user, string action)
         {
             //dummy
             return false;
         }
 
-        public PlaceableObject clear()
+        public virtual PlaceableObject clear()
         {
             //dummy
             return null;
         }
 
-        public PlaceableObject clone()
+        public virtual PlaceableObject clone()
         {
             //dummy
             return null;
         }
 
-        public bool control(dynamic options)
+        public virtual  bool control(dynamic options)
         {
             //dummy
             return false;
         }
 
-        public void delete() { }
+        public virtual void delete() { }
 
         
 
-        public dynamic getFlag(string scope, string key)
+        public virtual dynamic getFlag(string scope, string key)
         {
             //dummy
             return null;
@@ -76,32 +76,32 @@ namespace FVTTBridge.Bindings
 
        
 
-        public bool release(dynamic options)
+        public virtual bool release(dynamic options)
         {
             //dummy
             return false;
         }
 
-        public Promise rotate(float angle, float snap)
+        public virtual Promise rotate(float angle, float snap)
         {
             //dummy
             return null;
         }
 
-        public Promise setFlag(string scope, string key, dynamic value)
+        public virtual Promise setFlag(string scope, string key, dynamic value)
         {
             //dummy
             return null;
         }
 
-        public Promise unsetFlag(string scope, string key)
+        public virtual Promise unsetFlag(string scope, string key)
         {
             //dummy
             return null;
         }
 
 
-        public void update() { }
+        public virtual void update() { }
 
         #endregion
 

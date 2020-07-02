@@ -37,12 +37,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="ActorGlue.cs" />
+    <Compile Include="Bindings\AmbientSound.cs" />
     <Compile Include="Bindings\AmbientLight.cs" />
     <Compile Include="Bindings\ActorDirectory.cs" />
     <Compile Include="Bindings\ActorSheet.cs" />
     <Compile Include="Bindings\Actors.cs" />
     <Compile Include="Bindings\Actor.cs" />
     <Compile Include="ActorSheetGlue.cs" />
+    <Compile Include="Bindings\AmbientSoundConfig.cs" />
     <Compile Include="Bindings\Application.cs" />
     <Compile Include="Bindings\BaseEntitySheet.cs" />
     <Compile Include="Bindings\Compendium.cs" />
@@ -115,6 +117,9 @@
     </Reference>
     <Reference Include="Retyped.es5, Version=2.8.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll</HintPath>
+    </Reference>
+    <Reference Include="Retyped.howler, Version=2.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Retyped.howler.2.0.6733\lib\net40\Retyped.howler.dll</HintPath>
     </Reference>
     <Reference Include="Retyped.node, Version=9.6.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Retyped.node.9.6.6733\lib\net40\Retyped.node.dll</HintPath>
