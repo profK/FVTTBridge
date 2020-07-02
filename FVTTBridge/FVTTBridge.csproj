@@ -46,7 +46,12 @@
     <Compile Include="ActorSheetGlue.cs" />
     <Compile Include="Bindings\AmbientSoundConfig.cs" />
     <Compile Include="Bindings\Application.cs" />
+    <Compile Include="Bindings\AudioHelper.cs" />
+    <Compile Include="Bindings\AutumnLeavesWeatherEffect.cs" />
+    <Compile Include="Bindings\AVConfig.cs" />
+    <Compile Include="Bindings\BackgroundLayer.cs" />
     <Compile Include="Bindings\BaseEntitySheet.cs" />
+    <Compile Include="Bindings\CanvasLayer.cs" />
     <Compile Include="Bindings\Compendium.cs" />
     <Compile Include="Bindings\ControlIcon.cs" />
     <Compile Include="Bindings\Entity.cs" />
