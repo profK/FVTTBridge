@@ -20,7 +20,6 @@ namespace FVTTBridge.Bindings
         public PIXI.Point center;
         public ControlIcon controlIcon;
         public dynamic data;
-        public float dimRadius;
         public PIXI.Polygon fov;
         public string id;
         public PIXI.Polygon los;
