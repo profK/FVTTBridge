@@ -17,21 +17,15 @@ namespace FVTTBridge.Bindings
      
 
         #region fields
-        public new PIXI.Point center;
-        public new ControlIcon controlIcon;
-        public new dynamic data;
-        public new PIXI.Polygon fov;
+     
         public Howl howl;
         public float howlId;
         public new string id;
-        public new PIXI.Polygon los;
-        public new MouseInteractionManager mouseInteractionManager;
+
         public float radius;
-        public new Scene scene;
-        public new FormApplication sheet;
+      
         public Type type;
-        public new string uuid;
-        public new dynamic vision;
+      
         #endregion
 
         #region region

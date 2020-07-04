@@ -51,6 +51,8 @@
     <Compile Include="Bindings\AVConfig.cs" />
     <Compile Include="Bindings\BackgroundLayer.cs" />
     <Compile Include="Bindings\BaseEntitySheet.cs" />
+    <Compile Include="Bindings\BaseGrid.cs" />
+    <Compile Include="Bindings\BasePlaceableHUD.cs" />
     <Compile Include="Bindings\CanvasLayer.cs" />
     <Compile Include="Bindings\Compendium.cs" />
     <Compile Include="Bindings\ControlIcon.cs" />
@@ -58,6 +60,7 @@
     <Compile Include="Bindings\EntityCollection.cs" />
     <Compile Include="Bindings\Folder.cs" />
     <Compile Include="Bindings\FormApplication.cs" />
+    <Compile Include="Bindings\GridHighLight.cs" />
     <Compile Include="Bindings\Hooks.cs" />
     <Compile Include="Bindings\Item.cs" />
     <Compile Include="Bindings\ItemSheet.cs" />
