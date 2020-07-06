@@ -58,6 +58,8 @@
     <Compile Include="Bindings\ChatLog.cs" />
     <Compile Include="Bindings\ClientSettings.cs" />
     <Compile Include="Bindings\Combat.cs" />
+    <Compile Include="Bindings\CombatTracker.cs" />
+    <Compile Include="Bindings\CombatTrackerConfig.cs" />
     <Compile Include="Bindings\Compendium.cs" />
     <Compile Include="Bindings\ControlIcon.cs" />
     <Compile Include="Bindings\Entity.cs" />
@@ -78,6 +80,7 @@
     <Compile Include="Bindings\Socket.cs" />
     <Compile Include="Bindings\Token.cs" />
     <Compile Include="Bindings\User.cs" />
+    <Compile Include="CombatEncounters.cs" />
     <Compile Include="FoundryModule.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Glue.cs" />
