@@ -55,6 +55,7 @@
     <Compile Include="Bindings\BasePlaceableHUD.cs" />
     <Compile Include="Bindings\CanvasLayer.cs" />
     <Compile Include="Bindings\ChatBubbles.cs" />
+    <Compile Include="Bindings\ChatLog.cs" />
     <Compile Include="Bindings\Compendium.cs" />
     <Compile Include="Bindings\ControlIcon.cs" />
     <Compile Include="Bindings\Entity.cs" />
@@ -66,10 +67,12 @@
     <Compile Include="Bindings\Item.cs" />
     <Compile Include="Bindings\ItemSheet.cs" />
     <Compile Include="Bindings\Collection.cs" />
+    <Compile Include="Bindings\Messages.cs" />
     <Compile Include="Bindings\MouseInteractionManager.cs" />
     <Compile Include="Bindings\Ray.cs" />
     <Compile Include="Bindings\Scene.cs" />
     <Compile Include="Bindings\SidebarDirectory.cs" />
+    <Compile Include="Bindings\SidebarTab.cs" />
     <Compile Include="Bindings\Socket.cs" />
     <Compile Include="Bindings\Token.cs" />
     <Compile Include="Bindings\User.cs" />
