@@ -19,7 +19,7 @@ namespace FVTTBridge.Bindings
        public dynamic getPosition(dynamic img){return null;}//dummy return
        public dynamic getImageSize(dynamic path){return null;}//dummy return
        public dynamic shareImage(){return null;}//dummy return
-       public dynamic _handleShareImage(optionsObject){return null;}//dummy return
+       public dynamic _handleShareImage(dynamic optionsObject){return null;}//dummy return
 
     }
         

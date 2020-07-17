@@ -10,8 +10,8 @@ namespace FVTTBridge.Bindings
     [Namespace(false)]    
     public class ClientSettings{
        public dynamic menus;
-       public dynamic storage;
        public dynamic settings;
+       public dynamic storage;
        public dynamic sheet(){return null;}//dummy return
        public dynamic register(dynamic module, dynamic key, dynamic data){return null;}//dummy return
        public dynamic registerMenu(dynamic module, dynamic key, dynamic data){return null;}//dummy return

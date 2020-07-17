@@ -78,7 +78,7 @@ namespace FVTTBridge.Bindings
         {
             Console.WriteLine("SystemInit Called!");
             //Actors.registerSheet("core",ActorSheetType);
-            Globals.CONFIG.Actor.entityClass = typeof(ActorGlue);
+            Globals.CONFIG.Actor.entityClass = ActorType;
             dynamic sheetOptions = new RawJSObject();
             sheetOptions.makeDefault = true;
             Actors.registerSheet("dnd5e", typeof(ActorSheetGlue), sheetOptions);

@@ -17,8 +17,8 @@ namespace FVTTBridge.Bindings
        public dynamic collection(){return null;}//dummy return
        public dynamic entities(){return null;}//dummy return
        public dynamic createDialog(dynamic data){return null;}//dummy return
-       public dynamic exportToCompendium(dynamic pack, optionsObject){return null;}//dummy return
-       public dynamic _handleDelete(optionsObject){return null;}//dummy return
+       public dynamic exportToCompendium(dynamic pack, dynamic optionsObject){return null;}//dummy return
+       public dynamic _handleDelete(dynamic optionsObject){return null;}//dummy return
 
     }
         

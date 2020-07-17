@@ -20,9 +20,9 @@ namespace FVTTBridge.Bindings
        public dynamic _getDataForUser(dynamic user){return null;}//dummy return
        public dynamic _sortUsersData(dynamic users){return null;}//dummy return
        public dynamic activateListeners(dynamic html){return null;}//dummy return
-       public dynamic _onCameraViewHover(dynamic event){return null;}//dummy return
-       public dynamic _onClickControl(dynamic event){return null;}//dummy return
-       public dynamic _onVolumeChange(dynamic event){return null;}//dummy return
+       public dynamic _onCameraViewHover(dynamic evt){return null;}//dummy return
+       public dynamic _onClickControl(dynamic evt){return null;}//dummy return
+       public dynamic _onVolumeChange(dynamic evt){return null;}//dummy return
        public dynamic _setVideoDisplayMode(dynamic view, dynamic enabled){return null;}//dummy return
        public dynamic _setAudioDisplayMode(dynamic view, dynamic enabled){return null;}//dummy return
        public dynamic _setPlayerListVisibility(){return null;}//dummy return

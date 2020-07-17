@@ -13,11 +13,11 @@ namespace FVTTBridge.Bindings
        public dynamic getData(){return null;}//dummy return
        public dynamic activateListeners(dynamic html){return null;}//dummy return
        public dynamic _setConfigSectionEnabled(dynamic selector, dynamic enabled){return null;}//dummy return
-       public dynamic _onServerTypeChanged(dynamic event){return null;}//dummy return
-       public dynamic _onTurnTypeChanged(dynamic event){return null;}//dummy return
-       public dynamic _onPTTKeyDown(dynamic event){return null;}//dummy return
-       public dynamic _onPTTMouseDown(dynamic event){return null;}//dummy return
-       public dynamic _updateObject(dynamic event, dynamic formData){return null;}//dummy return
+       public dynamic _onServerTypeChanged(dynamic evt){return null;}//dummy return
+       public dynamic _onTurnTypeChanged(dynamic evt){return null;}//dummy return
+       public dynamic _onPTTKeyDown(dynamic evt){return null;}//dummy return
+       public dynamic _onPTTMouseDown(dynamic evt){return null;}//dummy return
+       public dynamic _updateObject(dynamic evt, dynamic formData){return null;}//dummy return
 
     }
         

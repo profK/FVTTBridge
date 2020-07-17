@@ -9,9 +9,9 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class SidebarTab{
-       public dynamic _popout;
-       public dynamic tabName;
        public dynamic _original;
+       public dynamic tabName;
+       public dynamic _popout;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic _renderInner(dynamic data){return null;}//dummy return
        public dynamic _render(params dynamic[] args){return null;}//dummy return

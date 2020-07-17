@@ -9,10 +9,10 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class ChatLog{
-       public dynamic _lastId;
-       public dynamic _sentMessages;
-       public dynamic _lastMessageTime;
        public dynamic _sentMessageIndex;
+       public dynamic _sentMessages;
+       public dynamic _lastId;
+       public dynamic _lastMessageTime;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic collection(){return null;}//dummy return
        public dynamic getData(dynamic options){return null;}//dummy return
@@ -20,7 +20,7 @@ namespace FVTTBridge.Bindings
        public dynamic _renderBatch(dynamic size){return null;}//dummy return
        public dynamic renderPopout(dynamic original){return null;}//dummy return
        public dynamic deleteAll(){return null;}//dummy return
-       public dynamic deleteMessage(dynamic messageId, optionsObject){return null;}//dummy return
+       public dynamic deleteMessage(dynamic messageId, dynamic optionsObject){return null;}//dummy return
        public dynamic notify(dynamic message){return null;}//dummy return
        public dynamic parse(dynamic message){return null;}//dummy return
        public dynamic postOne(dynamic message, dynamic notify){return null;}//dummy return
@@ -36,13 +36,13 @@ namespace FVTTBridge.Bindings
        public dynamic _recall(dynamic increment){return null;}//dummy return
        public dynamic _contextMenu(dynamic html){return null;}//dummy return
        public dynamic _getEntryContextOptions(){return null;}//dummy return
-       public dynamic _onChatKeyDown(dynamic event){return null;}//dummy return
-       public dynamic _onChangeRollMode(dynamic event){return null;}//dummy return
-       public dynamic _onDeleteMessage(dynamic event){return null;}//dummy return
-       public dynamic _onDiceRollClick(dynamic event){return null;}//dummy return
-       public dynamic _onExportLog(dynamic event){return null;}//dummy return
-       public dynamic _onFlushLog(dynamic event){return null;}//dummy return
-       public dynamic _onScrollLog(dynamic event){return null;}//dummy return
+       public dynamic _onChatKeyDown(dynamic evt){return null;}//dummy return
+       public dynamic _onChangeRollMode(dynamic evt){return null;}//dummy return
+       public dynamic _onDeleteMessage(dynamic evt){return null;}//dummy return
+       public dynamic _onDiceRollClick(dynamic evt){return null;}//dummy return
+       public dynamic _onExportLog(dynamic evt){return null;}//dummy return
+       public dynamic _onFlushLog(dynamic evt){return null;}//dummy return
+       public dynamic _onScrollLog(dynamic evt){return null;}//dummy return
 
     }
         

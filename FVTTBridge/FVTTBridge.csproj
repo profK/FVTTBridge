@@ -77,7 +77,6 @@
     <Compile Include="Bindings\Scene.cs" />
     <Compile Include="Bindings\SidebarDirectory.cs" />
     <Compile Include="Bindings\SidebarTab.cs" />
-    <Compile Include="Bindings\Socket.cs" />
     <Compile Include="Bindings\Token.cs" />
     <Compile Include="Bindings\User.cs" />
     <Compile Include="CombatEncounters.cs" />

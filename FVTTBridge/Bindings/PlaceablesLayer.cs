@@ -9,13 +9,13 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class PlaceablesLayer{
-       public dynamic preview;
+       public dynamic objects;
        public dynamic history;
        public dynamic _controlled;
-       public dynamic objects;
        public dynamic _copy;
-       public dynamic options;
        public dynamic _hover;
+       public dynamic options;
+       public dynamic preview;
        public dynamic layerOptions(){return null;}//dummy return
        public dynamic instance(){return null;}//dummy return
        public dynamic dataArray(){return null;}//dummy return
@@ -31,8 +31,8 @@ namespace FVTTBridge.Bindings
        public dynamic deactivate(){return null;}//dummy return
        public dynamic get(dynamic objectId){return null;}//dummy return
        public dynamic releaseAll(){return null;}//dummy return
-       public dynamic rotateMany(optionsObject){return null;}//dummy return
-       public dynamic moveMany(optionsObject){return null;}//dummy return
+       public dynamic rotateMany(dynamic optionsObject){return null;}//dummy return
+       public dynamic moveMany(dynamic optionsObject){return null;}//dummy return
        public dynamic undoHistory(){return null;}//dummy return
        public dynamic createMany(dynamic data, dynamic options){return null;}//dummy return
        public dynamic updateMany(dynamic data, dynamic options){return null;}//dummy return
@@ -40,18 +40,18 @@ namespace FVTTBridge.Bindings
        public dynamic deleteAll(){return null;}//dummy return
        public dynamic storeHistory(dynamic type, dynamic data){return null;}//dummy return
        public dynamic copyObjects(){return null;}//dummy return
-       public dynamic pasteObjects(dynamic position, optionsObject){return null;}//dummy return
-       public dynamic selectObjects(optionsObject){return null;}//dummy return
-       public dynamic getDragDestination(dynamic object, dynamic destination, dynamic snap){return null;}//dummy return
-       public dynamic _onClickLeft(dynamic event){return null;}//dummy return
-       public dynamic _onClickLeft2(dynamic event){return null;}//dummy return
-       public dynamic _onDragLeftStart(dynamic event){return null;}//dummy return
-       public dynamic _onDragLeftMove(dynamic event){return null;}//dummy return
-       public dynamic _onDragLeftDrop(dynamic event){return null;}//dummy return
-       public dynamic _onDragLeftCancel(dynamic event){return null;}//dummy return
-       public dynamic _onClickRight(dynamic event){return null;}//dummy return
-       public dynamic _onMouseWheel(dynamic event){return null;}//dummy return
-       public dynamic _onDeleteKey(dynamic event){return null;}//dummy return
+       public dynamic pasteObjects(dynamic position, dynamic optionsObject){return null;}//dummy return
+       public dynamic selectObjects(dynamic optionsObject){return null;}//dummy return
+       public dynamic getDragDestination(dynamic jsobject, dynamic destination, dynamic snap){return null;}//dummy return
+       public dynamic _onClickLeft(dynamic evt){return null;}//dummy return
+       public dynamic _onClickLeft2(dynamic evt){return null;}//dummy return
+       public dynamic _onDragLeftStart(dynamic evt){return null;}//dummy return
+       public dynamic _onDragLeftMove(dynamic evt){return null;}//dummy return
+       public dynamic _onDragLeftDrop(dynamic evt){return null;}//dummy return
+       public dynamic _onDragLeftCancel(dynamic evt){return null;}//dummy return
+       public dynamic _onClickRight(dynamic evt){return null;}//dummy return
+       public dynamic _onMouseWheel(dynamic evt){return null;}//dummy return
+       public dynamic _onDeleteKey(dynamic evt){return null;}//dummy return
 
     }
         

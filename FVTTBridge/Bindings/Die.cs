@@ -11,8 +11,8 @@ namespace FVTTBridge.Bindings
     public class Die{
        public dynamic rolls;
        public dynamic sides;
-       public dynamic faces;
        public dynamic options;
+       public dynamic faces;
        public dynamic results(){return null;}//dummy return
        public dynamic total(){return null;}//dummy return
        public dynamic _getFaces(dynamic f){return null;}//dummy return

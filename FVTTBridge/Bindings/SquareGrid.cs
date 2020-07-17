@@ -18,7 +18,7 @@ namespace FVTTBridge.Bindings
        public dynamic getSnappedPosition(dynamic x, dynamic y, dynamic interval){return null;}//dummy return
        public dynamic shiftPosition(dynamic x, dynamic y, dynamic dx, dynamic dy){return null;}//dummy return
        public dynamic _getNearestVertex(dynamic x, dynamic y){return null;}//dummy return
-       public dynamic highlightGridPosition(dynamic layer, optionsObject){return null;}//dummy return
+       public dynamic highlightGridPosition(dynamic layer, dynamic optionsObject){return null;}//dummy return
        public dynamic measureDistances(dynamic segments, dynamic options){return null;}//dummy return
        public dynamic getNeighbors(dynamic row, dynamic col){return null;}//dummy return
 

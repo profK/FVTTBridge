@@ -11,7 +11,7 @@ namespace FVTTBridge.Bindings
     public class SceneDirectory{
        public dynamic entity(){return null;}//dummy return
        public dynamic collection(){return null;}//dummy return
-       public dynamic _onCreate(dynamic event){return null;}//dummy return
+       public dynamic _onCreate(dynamic evt){return null;}//dummy return
        public dynamic _getEntryContextOptions(){return null;}//dummy return
 
     }

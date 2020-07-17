@@ -9,12 +9,12 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class MeasuredTemplate{
-       public dynamic template;
        public dynamic texture;
-       public dynamic shape;
-       public dynamic controlIcon;
        public dynamic _borderThickness;
+       public dynamic shape;
        public dynamic ruler;
+       public dynamic controlIcon;
+       public dynamic template;
        public dynamic embeddedName(){return null;}//dummy return
        public dynamic borderColor(){return null;}//dummy return
        public dynamic fillColor(){return null;}//dummy return
@@ -31,9 +31,9 @@ namespace FVTTBridge.Bindings
        public dynamic _refreshRulerText(){return null;}//dummy return
        public dynamic highlightGrid(){return null;}//dummy return
        public dynamic rotate(dynamic angle, dynamic snap){return null;}//dummy return
-       public dynamic _canControl(dynamic user, dynamic event){return null;}//dummy return
-       public dynamic _canConfigure(dynamic user, dynamic event){return null;}//dummy return
-       public dynamic _canView(dynamic user, dynamic event){return null;}//dummy return
+       public dynamic _canControl(dynamic user, dynamic evt){return null;}//dummy return
+       public dynamic _canConfigure(dynamic user, dynamic evt){return null;}//dummy return
+       public dynamic _canView(dynamic user, dynamic evt){return null;}//dummy return
        public dynamic _onUpdate(dynamic data){return null;}//dummy return
        public dynamic _onDelete(){return null;}//dummy return
 

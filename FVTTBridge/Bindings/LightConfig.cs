@@ -11,7 +11,7 @@ namespace FVTTBridge.Bindings
     public class LightConfig{
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic getData(){return null;}//dummy return
-       public dynamic _updateObject(dynamic event, dynamic formData){return null;}//dummy return
+       public dynamic _updateObject(dynamic evt, dynamic formData){return null;}//dummy return
 
     }
         

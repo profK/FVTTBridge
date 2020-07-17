@@ -15,7 +15,7 @@ namespace FVTTBridge.Bindings
        public dynamic _onUpdate(dynamic data, params dynamic[] args){return null;}//dummy return
        public dynamic _onDelete(params dynamic[] args){return null;}//dummy return
        public dynamic show(dynamic mode, dynamic force){return null;}//dummy return
-       public dynamic panToNote(optionsObject){return null;}//dummy return
+       public dynamic panToNote(dynamic optionsObject){return null;}//dummy return
 
     }
         

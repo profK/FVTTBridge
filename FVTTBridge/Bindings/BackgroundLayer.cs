@@ -16,7 +16,7 @@ namespace FVTTBridge.Bindings
        public dynamic tearDown(){return null;}//dummy return
        public dynamic draw(){return null;}//dummy return
        public dynamic activate(){return null;}//dummy return
-       public dynamic createThumbnail(dynamic texture, optionsObject){return null;}//dummy return
+       public dynamic createThumbnail(dynamic texture, dynamic optionsObject){return null;}//dummy return
 
     }
         

@@ -9,10 +9,10 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class SpecialEffect{
-       public dynamic _stop;
-       public dynamic emitters;
        public dynamic parent;
        public dynamic options;
+       public dynamic emitters;
+       public dynamic _stop;
        public dynamic label(){return null;}//dummy return
        public dynamic effectOptions(){return null;}//dummy return
        public dynamic getParticleEmitters(){return null;}//dummy return

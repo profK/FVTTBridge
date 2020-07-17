@@ -15,7 +15,7 @@ namespace FVTTBridge.Bindings
        public dynamic getData(dynamic options){return null;}//dummy return
        public dynamic activateListeners(dynamic html){return null;}//dummy return
        public dynamic _getUserContextOptions(){return null;}//dummy return
-       public dynamic _onToggleOfflinePlayers(dynamic event){return null;}//dummy return
+       public dynamic _onToggleOfflinePlayers(dynamic evt){return null;}//dummy return
 
     }
         

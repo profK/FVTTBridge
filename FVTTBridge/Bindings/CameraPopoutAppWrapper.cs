@@ -10,11 +10,11 @@ namespace FVTTBridge.Bindings
     [Namespace(false)]    
     public class CameraPopoutAppWrapper{
        public dynamic element;
-       public dynamic userId;
        public dynamic view;
+       public dynamic userId;
        public dynamic position(){return null;}//dummy return
-       public dynamic setPosition(optionsObject){return null;}//dummy return
-       public dynamic _onResize(dynamic event){return null;}//dummy return
+       public dynamic setPosition(dynamic optionsObject){return null;}//dummy return
+       public dynamic _onResize(dynamic evt){return null;}//dummy return
        public dynamic displayToFront(){return null;}//dummy return
 
     }

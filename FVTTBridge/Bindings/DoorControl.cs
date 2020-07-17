@@ -17,8 +17,8 @@ namespace FVTTBridge.Bindings
        public dynamic isVisible(){return null;}//dummy return
        public dynamic _onMouseOver(dynamic ev){return null;}//dummy return
        public dynamic _onMouseOut(dynamic ev){return null;}//dummy return
-       public dynamic _onMouseDown(dynamic event){return null;}//dummy return
-       public dynamic _onRightDown(dynamic event){return null;}//dummy return
+       public dynamic _onMouseDown(dynamic evt){return null;}//dummy return
+       public dynamic _onRightDown(dynamic evt){return null;}//dummy return
 
     }
         

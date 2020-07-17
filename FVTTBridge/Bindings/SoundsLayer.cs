@@ -15,10 +15,10 @@ namespace FVTTBridge.Bindings
        public dynamic initialize(){return null;}//dummy return
        public dynamic update(){return null;}//dummy return
        public dynamic stopAll(){return null;}//dummy return
-       public dynamic _onDragLeftStart(dynamic event){return null;}//dummy return
-       public dynamic _onDragLeftMove(dynamic event){return null;}//dummy return
-       public dynamic _onDragLeftDrop(dynamic event){return null;}//dummy return
-       public dynamic _onDragLeftCancel(dynamic event){return null;}//dummy return
+       public dynamic _onDragLeftStart(dynamic evt){return null;}//dummy return
+       public dynamic _onDragLeftMove(dynamic evt){return null;}//dummy return
+       public dynamic _onDragLeftDrop(dynamic evt){return null;}//dummy return
+       public dynamic _onDragLeftCancel(dynamic evt){return null;}//dummy return
 
     }
         

@@ -13,9 +13,9 @@ namespace FVTTBridge.Bindings
        public dynamic id(){return null;}//dummy return
        public dynamic getData(){return null;}//dummy return
        public dynamic activateListeners(dynamic html){return null;}//dummy return
-       public dynamic _onEditImage(dynamic event){return null;}//dummy return
-       public dynamic _onExecute(dynamic event){return null;}//dummy return
-       public dynamic _updateObject(dynamic event, dynamic formData){return null;}//dummy return
+       public dynamic _onEditImage(dynamic evt){return null;}//dummy return
+       public dynamic _onExecute(dynamic evt){return null;}//dummy return
+       public dynamic _updateObject(dynamic evt, dynamic formData){return null;}//dummy return
 
     }
         

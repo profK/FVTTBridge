@@ -21,9 +21,9 @@ namespace FVTTBridge.Bindings
        public dynamic getTrackedAttributes(dynamic data, dynamic _path){return null;}//dummy return
        public dynamic _getAlternateTokenImages(){return null;}//dummy return
        public dynamic activateListeners(dynamic html){return null;}//dummy return
-       public dynamic _updateObject(dynamic event, dynamic formData){return null;}//dummy return
+       public dynamic _updateObject(dynamic evt, dynamic formData){return null;}//dummy return
        public dynamic _updateActorData(dynamic tokenData){return null;}//dummy return
-       public dynamic _onAssignToken(dynamic event){return null;}//dummy return
+       public dynamic _onAssignToken(dynamic evt){return null;}//dummy return
        public dynamic _onBarChange(dynamic ev){return null;}//dummy return
 
     }

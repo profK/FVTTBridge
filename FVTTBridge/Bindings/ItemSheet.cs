@@ -16,8 +16,8 @@ namespace FVTTBridge.Bindings
        public dynamic getData(){return null;}//dummy return
        public dynamic _getHeaderButtons(){return null;}//dummy return
        public dynamic activateListeners(dynamic html){return null;}//dummy return
-       public dynamic _onConfigureSheet(dynamic event){return null;}//dummy return
-       public dynamic _onEditImage(dynamic event){return null;}//dummy return
+       public dynamic _onConfigureSheet(dynamic evt){return null;}//dummy return
+       public dynamic _onEditImage(dynamic evt){return null;}//dummy return
 
     }
         

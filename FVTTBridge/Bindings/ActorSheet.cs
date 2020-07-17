@@ -18,15 +18,15 @@ namespace FVTTBridge.Bindings
        public dynamic _render(dynamic force, dynamic options){return null;}//dummy return
        public dynamic _getHeaderButtons(){return null;}//dummy return
        public dynamic activateListeners(dynamic html){return null;}//dummy return
-       public dynamic _onConfigureToken(dynamic event){return null;}//dummy return
-       public dynamic _onConfigureSheet(dynamic event){return null;}//dummy return
-       public dynamic _onEditImage(dynamic event){return null;}//dummy return
+       public dynamic _onConfigureToken(dynamic evt){return null;}//dummy return
+       public dynamic _onConfigureSheet(dynamic evt){return null;}//dummy return
+       public dynamic _onEditImage(dynamic evt){return null;}//dummy return
        public dynamic _canDragStart(dynamic selector){return null;}//dummy return
        public dynamic _canDragDrop(dynamic selector){return null;}//dummy return
-       public dynamic _onDragStart(dynamic event){return null;}//dummy return
-       public dynamic _onDragItemStart(dynamic event){return null;}//dummy return
-       public dynamic _onDrop(dynamic event){return null;}//dummy return
-       public dynamic _onSortItem(dynamic event, dynamic itemData){return null;}//dummy return
+       public dynamic _onDragStart(dynamic evt){return null;}//dummy return
+       public dynamic _onDragItemStart(dynamic evt){return null;}//dummy return
+       public dynamic _onDrop(dynamic evt){return null;}//dummy return
+       public dynamic _onSortItem(dynamic evt, dynamic itemData){return null;}//dummy return
        public dynamic _getSortSiblings(dynamic source){return null;}//dummy return
 
     }

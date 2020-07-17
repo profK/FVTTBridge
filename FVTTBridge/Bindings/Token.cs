@@ -9,11 +9,11 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Token{
-       public dynamic actor;
+       public dynamic targeted;
        public dynamic _movement;
        public dynamic _velocity;
        public dynamic _noAnimate;
-       public dynamic targeted;
+       public dynamic actor;
        public dynamic _validPosition;
        public dynamic embeddedName(){return null;}//dummy return
        public dynamic owner(){return null;}//dummy return
@@ -39,7 +39,7 @@ namespace FVTTBridge.Bindings
        public dynamic _refreshBorder(){return null;}//dummy return
        public dynamic _getBorderColor(){return null;}//dummy return
        public dynamic _refreshTarget(){return null;}//dummy return
-       public dynamic getBarAttribute(dynamic barName, optionsObject){return null;}//dummy return
+       public dynamic getBarAttribute(dynamic barName, dynamic optionsObject){return null;}//dummy return
        public dynamic drawBars(){return null;}//dummy return
        public dynamic _drawBar(dynamic number, dynamic bar, dynamic data){return null;}//dummy return
        public dynamic _drawNameplate(){return null;}//dummy return
@@ -51,12 +51,12 @@ namespace FVTTBridge.Bindings
        public dynamic stopAnimation(){return null;}//dummy return
        public dynamic checkCollision(dynamic destination){return null;}//dummy return
        public dynamic clone(){return null;}//dummy return
-       public dynamic _onControl(optionsObject){return null;}//dummy return
-       public dynamic _onRelease(optionsObject){return null;}//dummy return
+       public dynamic _onControl(dynamic optionsObject){return null;}//dummy return
+       public dynamic _onRelease(dynamic optionsObject){return null;}//dummy return
        public dynamic getCenter(dynamic x, dynamic y){return null;}//dummy return
-       public dynamic setPosition(dynamic x, dynamic y, optionsObject){return null;}//dummy return
+       public dynamic setPosition(dynamic x, dynamic y, dynamic optionsObject){return null;}//dummy return
        public dynamic _updateVelocity(dynamic ray){return null;}//dummy return
-       public dynamic setTarget(dynamic targeted, optionsObject){return null;}//dummy return
+       public dynamic setTarget(dynamic targeted, dynamic optionsObject){return null;}//dummy return
        public dynamic toggleCombat(dynamic combat){return null;}//dummy return
        public dynamic toggleEffect(dynamic texture){return null;}//dummy return
        public dynamic toggleOverlay(dynamic texture){return null;}//dummy return
@@ -73,18 +73,18 @@ namespace FVTTBridge.Bindings
        public dynamic _onUpdateTokenActor(dynamic updateData){return null;}//dummy return
        public dynamic _onUpdateBaseActor(dynamic actorData, dynamic updateData){return null;}//dummy return
        public dynamic _onUpdateBarAttributes(dynamic updateData){return null;}//dummy return
-       public dynamic _canControl(dynamic user, dynamic event){return null;}//dummy return
-       public dynamic _canHUD(dynamic user, dynamic event){return null;}//dummy return
-       public dynamic _canConfigure(dynamic user, dynamic event){return null;}//dummy return
-       public dynamic _canHover(dynamic user, dynamic event){return null;}//dummy return
-       public dynamic _canView(dynamic user, dynamic event){return null;}//dummy return
-       public dynamic _canDrag(dynamic user, dynamic event){return null;}//dummy return
-       public dynamic _onHoverIn(dynamic event, dynamic options){return null;}//dummy return
-       public dynamic _onHoverOut(dynamic event){return null;}//dummy return
-       public dynamic _onClickLeft(dynamic event){return null;}//dummy return
-       public dynamic _onClickLeft2(dynamic event){return null;}//dummy return
-       public dynamic _onClickRight2(dynamic event){return null;}//dummy return
-       public dynamic _onDragLeftDrop(dynamic event){return null;}//dummy return
+       public dynamic _canControl(dynamic user, dynamic evt){return null;}//dummy return
+       public dynamic _canHUD(dynamic user, dynamic evt){return null;}//dummy return
+       public dynamic _canConfigure(dynamic user, dynamic evt){return null;}//dummy return
+       public dynamic _canHover(dynamic user, dynamic evt){return null;}//dummy return
+       public dynamic _canView(dynamic user, dynamic evt){return null;}//dummy return
+       public dynamic _canDrag(dynamic user, dynamic evt){return null;}//dummy return
+       public dynamic _onHoverIn(dynamic evt, dynamic options){return null;}//dummy return
+       public dynamic _onHoverOut(dynamic evt){return null;}//dummy return
+       public dynamic _onClickLeft(dynamic evt){return null;}//dummy return
+       public dynamic _onClickLeft2(dynamic evt){return null;}//dummy return
+       public dynamic _onClickRight2(dynamic evt){return null;}//dummy return
+       public dynamic _onDragLeftDrop(dynamic evt){return null;}//dummy return
 
     }
         

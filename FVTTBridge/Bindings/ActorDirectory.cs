@@ -13,9 +13,9 @@ namespace FVTTBridge.Bindings
        public dynamic collection(){return null;}//dummy return
        public dynamic getData(dynamic options){return null;}//dummy return
        public dynamic _canDragStart(dynamic selector){return null;}//dummy return
-       public dynamic _onDragStart(dynamic event){return null;}//dummy return
+       public dynamic _onDragStart(dynamic evt){return null;}//dummy return
        public dynamic _canDragDrop(dynamic selector){return null;}//dummy return
-       public dynamic _onClickEntityName(dynamic event){return null;}//dummy return
+       public dynamic _onClickEntityName(dynamic evt){return null;}//dummy return
        public dynamic _getEntryContextOptions(){return null;}//dummy return
 
     }

@@ -17,9 +17,9 @@ namespace FVTTBridge.Bindings
        public dynamic name(){return null;}//dummy return
        public dynamic instance(){return null;}//dummy return
        public dynamic directory(){return null;}//dummy return
-       public dynamic object(){return null;}//dummy return
+       public dynamic jsobject(){return null;}//dummy return
        public dynamic entity(){return null;}//dummy return
-       public dynamic getName(dynamic name, optionsObject){return null;}//dummy return
+       public dynamic getName(dynamic name, dynamic optionsObject){return null;}//dummy return
        public dynamic insert(dynamic entity){return null;}//dummy return
        public dynamic remove(dynamic id){return null;}//dummy return
        public dynamic importFromCollection(dynamic collection, dynamic entryId, dynamic updateData, dynamic options){return null;}//dummy return

@@ -9,33 +9,33 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class PlaceableObject{
-       public dynamic mouseInteractionManager;
-       public dynamic _hover;
-       public dynamic controlIcon;
-       public dynamic _sheet;
-       public dynamic _controlled;
        public dynamic data;
-       public dynamic scene;
        public dynamic vision;
+       public dynamic _sheet;
+       public dynamic mouseInteractionManager;
+       public dynamic _controlled;
+       public dynamic controlIcon;
+       public dynamic _hover;
+       public dynamic scene;
        public dynamic center(){return null;}//dummy return
        public dynamic id(){return null;}//dummy return
        public dynamic fov(){return null;}//dummy return
        public dynamic embeddedName(){return null;}//dummy return
        public dynamic layer(){return null;}//dummy return
-       public dynamic layer(){return null;}//dummy return
+       //public dynamic layer(){return null;}//dummy return
        public dynamic los(){return null;}//dummy return
        public dynamic sheet(){return null;}//dummy return
        public dynamic uuid(){return null;}//dummy return
        public dynamic can(dynamic user, dynamic action){return null;}//dummy return
-       public dynamic _canHUD(dynamic user, dynamic event){return null;}//dummy return
-       public dynamic _canConfigure(dynamic user, dynamic event){return null;}//dummy return
-       public dynamic _canControl(dynamic user, dynamic event){return null;}//dummy return
-       public dynamic _canView(dynamic user, dynamic event){return null;}//dummy return
-       public dynamic _canCreate(dynamic user, dynamic event){return null;}//dummy return
-       public dynamic _canDrag(dynamic user, dynamic event){return null;}//dummy return
-       public dynamic _canHover(dynamic user, dynamic event){return null;}//dummy return
-       public dynamic _canUpdate(dynamic user, dynamic event){return null;}//dummy return
-       public dynamic _canDelete(dynamic user, dynamic event){return null;}//dummy return
+       public dynamic _canHUD(dynamic user, dynamic evt){return null;}//dummy return
+       public dynamic _canConfigure(dynamic user, dynamic evt){return null;}//dummy return
+       public dynamic _canControl(dynamic user, dynamic evt){return null;}//dummy return
+       public dynamic _canView(dynamic user, dynamic evt){return null;}//dummy return
+       public dynamic _canCreate(dynamic user, dynamic evt){return null;}//dummy return
+       public dynamic _canDrag(dynamic user, dynamic evt){return null;}//dummy return
+       public dynamic _canHover(dynamic user, dynamic evt){return null;}//dummy return
+       public dynamic _canUpdate(dynamic user, dynamic evt){return null;}//dummy return
+       public dynamic _canDelete(dynamic user, dynamic evt){return null;}//dummy return
        public dynamic clear(){return null;}//dummy return
        public dynamic clone(){return null;}//dummy return
        public dynamic draw(){return null;}//dummy return
@@ -55,20 +55,20 @@ namespace FVTTBridge.Bindings
        public dynamic release(dynamic options){return null;}//dummy return
        public dynamic _onRelease(dynamic options){return null;}//dummy return
        public dynamic rotate(dynamic angle, dynamic snap){return null;}//dummy return
-       public dynamic _updateRotation(optionsObject){return null;}//dummy return
+       public dynamic _updateRotation(dynamic optionsObject){return null;}//dummy return
        public dynamic _getShiftedPosition(dynamic dx, dynamic dy){return null;}//dummy return
        public dynamic activateListeners(){return null;}//dummy return
        public dynamic _createInteractionManager(){return null;}//dummy return
-       public dynamic _onHoverIn(dynamic event, optionsObject){return null;}//dummy return
-       public dynamic _onHoverOut(dynamic event){return null;}//dummy return
-       public dynamic _onClickLeft(dynamic event){return null;}//dummy return
-       public dynamic _onClickLeft2(dynamic event){return null;}//dummy return
-       public dynamic _onClickRight(dynamic event){return null;}//dummy return
-       public dynamic _onClickRight2(dynamic event){return null;}//dummy return
-       public dynamic _onDragLeftStart(dynamic event){return null;}//dummy return
-       public dynamic _onDragLeftMove(dynamic event){return null;}//dummy return
-       public dynamic _onDragLeftDrop(dynamic event){return null;}//dummy return
-       public dynamic _onDragLeftCancel(dynamic event){return null;}//dummy return
+       public dynamic _onHoverIn(dynamic evt, dynamic optionsObject){return null;}//dummy return
+       public dynamic _onHoverOut(dynamic evt){return null;}//dummy return
+       public dynamic _onClickLeft(dynamic evt){return null;}//dummy return
+       public dynamic _onClickLeft2(dynamic evt){return null;}//dummy return
+       public dynamic _onClickRight(dynamic evt){return null;}//dummy return
+       public dynamic _onClickRight2(dynamic evt){return null;}//dummy return
+       public dynamic _onDragLeftStart(dynamic evt){return null;}//dummy return
+       public dynamic _onDragLeftMove(dynamic evt){return null;}//dummy return
+       public dynamic _onDragLeftDrop(dynamic evt){return null;}//dummy return
+       public dynamic _onDragLeftCancel(dynamic evt){return null;}//dummy return
 
     }
         

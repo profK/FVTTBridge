@@ -9,11 +9,11 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class EasyRTCClient{
-       public dynamic _usernameCache;
        public dynamic _callRejections;
        public dynamic _room;
+       public dynamic _usernameCache;
        public dynamic initialize(){return null;}//dummy return
-       public dynamic connect(optionsObject){return null;}//dummy return
+       public dynamic connect(dynamic optionsObject){return null;}//dummy return
        public dynamic _loginSuccess(dynamic resolve, dynamic easyRtcId){return null;}//dummy return
        public dynamic _loginFailure(dynamic resolve, dynamic errorCode, dynamic message){return null;}//dummy return
        public dynamic _setupCustomTURN(){return null;}//dummy return
@@ -36,7 +36,7 @@ namespace FVTTBridge.Bindings
        public dynamic _answerIncomingCall(dynamic easyRtcId, dynamic acceptor){return null;}//dummy return
        public dynamic _onStreamAdded(dynamic callerEasyRtcId, dynamic stream){return null;}//dummy return
        public dynamic _onStreamClosed(dynamic easyRtcId, dynamic stream, dynamic streamName){return null;}//dummy return
-       public dynamic _onError(optionsObject){return null;}//dummy return
+       public dynamic _onError(dynamic optionsObject){return null;}//dummy return
        public dynamic _onDisconnect(){return null;}//dummy return
        public dynamic _onPeerOpen(dynamic easyRtcId){return null;}//dummy return
        public dynamic _onPeerClosed(dynamic easyRtcId){return null;}//dummy return

@@ -14,7 +14,7 @@ namespace FVTTBridge.Bindings
        public dynamic activateListeners(dynamic html){return null;}//dummy return
        public dynamic _contextMenu(dynamic html){return null;}//dummy return
        public dynamic _getEntryContextOptions(){return null;}//dummy return
-       public dynamic _onCreateCompendium(dynamic event){return null;}//dummy return
+       public dynamic _onCreateCompendium(dynamic evt){return null;}//dummy return
        public dynamic _onDeleteCompendium(dynamic pack){return null;}//dummy return
 
     }

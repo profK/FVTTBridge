@@ -16,10 +16,10 @@ namespace FVTTBridge.Bindings
        public dynamic _getWeatherTypes(){return null;}//dummy return
        public dynamic _getEntities(dynamic collection){return null;}//dummy return
        public dynamic activateListeners(dynamic html){return null;}//dummy return
-       public dynamic _onCapturePosition(dynamic event){return null;}//dummy return
-       public dynamic _onChangeRange(dynamic event){return null;}//dummy return
-       public dynamic _onGridConfig(dynamic event){return null;}//dummy return
-       public dynamic _updateObject(dynamic event, dynamic formData){return null;}//dummy return
+       public dynamic _onCapturePosition(dynamic evt){return null;}//dummy return
+       public dynamic _onChangeRange(dynamic evt){return null;}//dummy return
+       public dynamic _onGridConfig(dynamic evt){return null;}//dummy return
+       public dynamic _updateObject(dynamic evt, dynamic formData){return null;}//dummy return
 
     }
         

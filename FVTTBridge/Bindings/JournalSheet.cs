@@ -18,9 +18,9 @@ namespace FVTTBridge.Bindings
        public dynamic _render(dynamic force, dynamic options){return null;}//dummy return
        public dynamic _getHeaderButtons(){return null;}//dummy return
        public dynamic getData(){return null;}//dummy return
-       public dynamic _updateObject(dynamic event, dynamic formData){return null;}//dummy return
-       public dynamic _onSwapMode(dynamic event, dynamic mode){return null;}//dummy return
-       public dynamic _onShowPlayers(dynamic event){return null;}//dummy return
+       public dynamic _updateObject(dynamic evt, dynamic formData){return null;}//dummy return
+       public dynamic _onSwapMode(dynamic evt, dynamic mode){return null;}//dummy return
+       public dynamic _onShowPlayers(dynamic evt){return null;}//dummy return
 
     }
         

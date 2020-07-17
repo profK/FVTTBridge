@@ -12,12 +12,12 @@ namespace FVTTBridge.Bindings
        public dynamic config(){return null;}//dummy return
        public dynamic prepareEmbeddedEntities(){return null;}//dummy return
        public dynamic results(){return null;}//dummy return
-       public dynamic toMessage(dynamic results, optionsObject){return null;}//dummy return
-       public dynamic draw(optionsObject){return null;}//dummy return
-       public dynamic drawMany(dynamic number, optionsObject){return null;}//dummy return
+       public dynamic toMessage(dynamic results, dynamic optionsObject){return null;}//dummy return
+       public dynamic draw(dynamic optionsObject){return null;}//dummy return
+       public dynamic drawMany(dynamic number, dynamic optionsObject){return null;}//dummy return
        public dynamic normalize(){return null;}//dummy return
        public dynamic reset(){return null;}//dummy return
-       public dynamic roll(optionsObject){return null;}//dummy return
+       public dynamic roll(dynamic optionsObject){return null;}//dummy return
        public dynamic _getResultsForRoll(dynamic value){return null;}//dummy return
        public dynamic _getResultChatText(dynamic result){return null;}//dummy return
        public dynamic getTableResult(dynamic id){return null;}//dummy return

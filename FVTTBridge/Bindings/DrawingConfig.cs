@@ -13,10 +13,10 @@ namespace FVTTBridge.Bindings
        public dynamic title(){return null;}//dummy return
        public dynamic getData(){return null;}//dummy return
        public dynamic _getFillTypes(){return null;}//dummy return
-       public dynamic _updateObject(dynamic event, dynamic formData){return null;}//dummy return
+       public dynamic _updateObject(dynamic evt, dynamic formData){return null;}//dummy return
        public dynamic close(){return null;}//dummy return
        public dynamic activateListeners(dynamic html){return null;}//dummy return
-       public dynamic _onResetDefaults(dynamic event){return null;}//dummy return
+       public dynamic _onResetDefaults(dynamic evt){return null;}//dummy return
 
     }
         

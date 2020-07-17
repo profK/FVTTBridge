@@ -11,7 +11,7 @@ namespace FVTTBridge.Bindings
     public class ResizeHandle{
        public dynamic offset;
        public dynamic refresh(dynamic bounds){return null;}//dummy return
-       public dynamic updateDimensions(dynamic current, dynamic origin, dynamic destination, optionsObject){return null;}//dummy return
+       public dynamic updateDimensions(dynamic current, dynamic origin, dynamic destination, dynamic optionsObject){return null;}//dummy return
 
     }
         

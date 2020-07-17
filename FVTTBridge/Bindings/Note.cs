@@ -21,9 +21,9 @@ namespace FVTTBridge.Bindings
        public dynamic _onUpdate(dynamic data){return null;}//dummy return
        public dynamic _canHover(dynamic user){return null;}//dummy return
        public dynamic _canView(dynamic user){return null;}//dummy return
-       public dynamic _onHoverIn(dynamic event, dynamic options){return null;}//dummy return
-       public dynamic _onHoverOut(dynamic event){return null;}//dummy return
-       public dynamic _onClickLeft2(dynamic event){return null;}//dummy return
+       public dynamic _onHoverIn(dynamic evt, dynamic options){return null;}//dummy return
+       public dynamic _onHoverOut(dynamic evt){return null;}//dummy return
+       public dynamic _onClickLeft2(dynamic evt){return null;}//dummy return
 
     }
         

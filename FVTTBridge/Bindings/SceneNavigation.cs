@@ -19,10 +19,10 @@ namespace FVTTBridge.Bindings
        public dynamic collapse(){return null;}//dummy return
        public dynamic activateListeners(dynamic html){return null;}//dummy return
        public dynamic _getContextMenuOptions(){return null;}//dummy return
-       public dynamic _onClickScene(dynamic event){return null;}//dummy return
-       public dynamic _onDragStart(dynamic event){return null;}//dummy return
-       public dynamic _onDrop(dynamic event){return null;}//dummy return
-       public dynamic _onToggleNav(dynamic event){return null;}//dummy return
+       public dynamic _onClickScene(dynamic evt){return null;}//dummy return
+       public dynamic _onDragStart(dynamic evt){return null;}//dummy return
+       public dynamic _onDrop(dynamic evt){return null;}//dummy return
+       public dynamic _onToggleNav(dynamic evt){return null;}//dummy return
        public dynamic _onLoadProgress(dynamic context, dynamic pct){return null;}//dummy return
 
     }

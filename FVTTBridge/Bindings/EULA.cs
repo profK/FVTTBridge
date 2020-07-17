@@ -14,8 +14,8 @@ namespace FVTTBridge.Bindings
        public dynamic getData(){return null;}//dummy return
        public dynamic _renderOuter(dynamic options){return null;}//dummy return
        public dynamic activateListeners(dynamic html){return null;}//dummy return
-       public dynamic _onDecline(dynamic event){return null;}//dummy return
-       public dynamic _onSubmit(dynamic event){return null;}//dummy return
+       public dynamic _onDecline(dynamic evt){return null;}//dummy return
+       public dynamic _onSubmit(dynamic evt){return null;}//dummy return
 
     }
         

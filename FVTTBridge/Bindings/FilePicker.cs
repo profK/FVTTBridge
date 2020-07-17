@@ -9,17 +9,17 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class FilePicker{
-       public dynamic extensions;
+       public dynamic request;
+       public dynamic button;
+       public dynamic type;
+       public dynamic _filterTimeout;
+       public dynamic sources;
+       public dynamic _loaded;
        public dynamic results;
        public dynamic displayMode;
-       public dynamic _loaded;
-       public dynamic field;
-       public dynamic type;
-       public dynamic button;
-       public dynamic _filterTimeout;
+       public dynamic extensions;
        public dynamic activeSource;
-       public dynamic request;
-       public dynamic sources;
+       public dynamic field;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic _inferCurrentDirectory(dynamic target){return null;}//dummy return
        public dynamic _getExtensions(dynamic type){return null;}//dummy return
@@ -38,19 +38,19 @@ namespace FVTTBridge.Bindings
        public dynamic upload(dynamic source, dynamic path, dynamic file, dynamic options){return null;}//dummy return
        public dynamic render(dynamic force, dynamic options){return null;}//dummy return
        public dynamic activateListeners(dynamic html){return null;}//dummy return
-       public dynamic _onChangeDisplayMode(dynamic event){return null;}//dummy return
-       public dynamic _onChangeTab(dynamic event, dynamic tabs, dynamic active){return null;}//dummy return
+       public dynamic _onChangeDisplayMode(dynamic evt){return null;}//dummy return
+       public dynamic _onChangeTab(dynamic evt, dynamic tabs, dynamic active){return null;}//dummy return
        public dynamic _canDragStart(dynamic selector){return null;}//dummy return
        public dynamic _canDragDrop(dynamic selector){return null;}//dummy return
-       public dynamic _onDragStart(dynamic event){return null;}//dummy return
-       public dynamic _onDrop(dynamic event){return null;}//dummy return
-       public dynamic _onRequestTarget(dynamic event){return null;}//dummy return
+       public dynamic _onDragStart(dynamic evt){return null;}//dummy return
+       public dynamic _onDrop(dynamic evt){return null;}//dummy return
+       public dynamic _onRequestTarget(dynamic evt){return null;}//dummy return
        public dynamic _onLazyLoadImages(params dynamic[] args){return null;}//dummy return
-       public dynamic _onPick(dynamic event){return null;}//dummy return
-       public dynamic _onClickDirectoryControl(dynamic event){return null;}//dummy return
+       public dynamic _onPick(dynamic evt){return null;}//dummy return
+       public dynamic _onClickDirectoryControl(dynamic evt){return null;}//dummy return
        public dynamic _createDirectoryDialog(dynamic source){return null;}//dummy return
-       public dynamic _onChangeBucket(dynamic event){return null;}//dummy return
-       public dynamic _onFilterResults(dynamic event){return null;}//dummy return
+       public dynamic _onChangeBucket(dynamic evt){return null;}//dummy return
+       public dynamic _onFilterResults(dynamic evt){return null;}//dummy return
        public dynamic _onSubmit(dynamic ev){return null;}//dummy return
        public dynamic _onUpload(dynamic ev){return null;}//dummy return
        public dynamic fromButton(dynamic button, dynamic options){return null;}//dummy return

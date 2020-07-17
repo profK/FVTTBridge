@@ -15,9 +15,9 @@ namespace FVTTBridge.Bindings
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic getData(){return null;}//dummy return
        public dynamic activateListeners(dynamic html){return null;}//dummy return
-       public dynamic _onClickPackageTitle(dynamic event){return null;}//dummy return
-       public dynamic _onClickPackageInstall(dynamic event){return null;}//dummy return
-       public dynamic _onFilterResults(dynamic event){return null;}//dummy return
+       public dynamic _onClickPackageTitle(dynamic evt){return null;}//dummy return
+       public dynamic _onClickPackageInstall(dynamic evt){return null;}//dummy return
+       public dynamic _onFilterResults(dynamic evt){return null;}//dummy return
 
     }
         

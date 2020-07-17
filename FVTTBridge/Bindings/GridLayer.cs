@@ -10,13 +10,13 @@ namespace FVTTBridge.Bindings
     [Namespace(false)]    
     public class GridLayer{
        public dynamic highlight;
-       public dynamic highlightLayers;
        public dynamic grid;
+       public dynamic highlightLayers;
        public dynamic type(){return null;}//dummy return
        public dynamic size(){return null;}//dummy return
        public dynamic w(){return null;}//dummy return
        public dynamic h(){return null;}//dummy return
-       public dynamic draw(optionsObject){return null;}//dummy return
+       public dynamic draw(dynamic optionsObject){return null;}//dummy return
        public dynamic getSnappedPosition(dynamic x, dynamic y, dynamic interval){return null;}//dummy return
        public dynamic getTopLeft(dynamic x, dynamic y){return null;}//dummy return
        public dynamic getCenter(dynamic x, dynamic y){return null;}//dummy return

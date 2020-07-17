@@ -9,15 +9,15 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class WebRTC{
+       public dynamic _pttMuteTimeout;
+       public dynamic _connected;
+       public dynamic _pttHandlers;
+       public dynamic client;
+       public dynamic config;
+       public dynamic settings;
        public dynamic _reconnectPeriodMS;
        public dynamic _speakingData;
-       public dynamic _pttHandlers;
-       public dynamic _pttMuteTimeout;
-       public dynamic config;
-       public dynamic client;
        public dynamic _broadcastingAudio;
-       public dynamic _connected;
-       public dynamic settings;
        public dynamic initialize(){return null;}//dummy return
        public dynamic connect(){return null;}//dummy return
        public dynamic disconnect(){return null;}//dummy return
@@ -51,10 +51,10 @@ namespace FVTTBridge.Bindings
        public dynamic onDisconnect(){return null;}//dummy return
        public dynamic _resetSpeakingHistory(dynamic userId){return null;}//dummy return
        public dynamic _onAudioLevel(dynamic userId, dynamic dbLevel){return null;}//dummy return
-       public dynamic _onPTTKeyDown(dynamic event){return null;}//dummy return
-       public dynamic _onPTTKeyUp(dynamic event){return null;}//dummy return
-       public dynamic _onPTTMouseDown(dynamic event){return null;}//dummy return
-       public dynamic _onPTTMouseUp(dynamic event){return null;}//dummy return
+       public dynamic _onPTTKeyDown(dynamic evt){return null;}//dummy return
+       public dynamic _onPTTKeyUp(dynamic evt){return null;}//dummy return
+       public dynamic _onPTTMouseDown(dynamic evt){return null;}//dummy return
+       public dynamic _onPTTMouseUp(dynamic evt){return null;}//dummy return
        public dynamic debug(params dynamic[] args){return null;}//dummy return
 
     }

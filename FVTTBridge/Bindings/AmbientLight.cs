@@ -18,7 +18,7 @@ namespace FVTTBridge.Bindings
        public dynamic _drawField(){return null;}//dummy return
        public dynamic _drawControlIcon(){return null;}//dummy return
        public dynamic refresh(){return null;}//dummy return
-       public dynamic computeFOV(optionsObject){return null;}//dummy return
+       public dynamic computeFOV(dynamic optionsObject){return null;}//dummy return
        public dynamic _onCreate(params dynamic[] args){return null;}//dummy return
        public dynamic _onUpdate(params dynamic[] args){return null;}//dummy return
        public dynamic _onDelete(params dynamic[] args){return null;}//dummy return

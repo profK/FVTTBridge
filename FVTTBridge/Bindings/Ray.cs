@@ -9,15 +9,15 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Ray{
+       public dynamic dy;
+       public dynamic slope;
        public dynamic y0;
        public dynamic angle;
+       public dynamic A;
        public dynamic distance;
        public dynamic B;
-       public dynamic dy;
        public dynamic x0;
-       public dynamic slope;
        public dynamic dx;
-       public dynamic A;
        public dynamic normAngle(){return null;}//dummy return
        public dynamic fromAngle(dynamic x, dynamic y, dynamic radians, dynamic distance){return null;}//dummy return
        public dynamic fromArrays(dynamic A, dynamic B){return null;}//dummy return

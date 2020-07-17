@@ -9,8 +9,8 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class MersenneTwister{
-       public dynamic mti;
        public dynamic mt;
+       public dynamic mti;
        public dynamic seed(dynamic seed){return null;}//dummy return
        public dynamic seedArray(dynamic vector){return null;}//dummy return
        public dynamic int(){return null;}//dummy return

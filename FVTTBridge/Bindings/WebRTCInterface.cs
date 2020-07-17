@@ -9,10 +9,10 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class WebRTCInterface{
-       public dynamic webrtc;
        public dynamic settings;
+       public dynamic webrtc;
        public dynamic initialize(){return null;}//dummy return
-       public dynamic connect(optionsObject){return null;}//dummy return
+       public dynamic connect(dynamic optionsObject){return null;}//dummy return
        public dynamic disconnect(){return null;}//dummy return
        public dynamic initLocalStream(dynamic audioSrc, dynamic videoSrc, dynamic temporary){return null;}//dummy return
        public dynamic closeLocalStream(dynamic temporary){return null;}//dummy return
