@@ -1,56 +1,34 @@
-﻿using Bridge;
-using Newtonsoft.Json;
-using System;
-using Bridge.Html5;
-using Bridge.jQuery2;
 
+using Bridge;
+using System;
+        
+        
 namespace FVTTBridge.Bindings
 {
-
-
-    public class ActorSheet
-    {
-        internal ActorSheetGlue Glue
-        {
-            get; set;
-        }
-
-        public ActorSheet() { }
-        public ActorSheet(ActorSheetGlue glue)
-        {
-            Glue = glue;
-        }
-
-        public dynamic Options
-        {
-            get
-            {
-                return Glue.Options;
-            }
-        }
-
-        public Actor Actor
-        {
-            get
-            {
-                return Glue.ActorGlue.Actor;
-            }
-        }
-       
-       public virtual void ActivateListeners(jQuery html)
-        {
-
-        }
-
-        public  void Render(bool v)
-        {
-            Glue.Render(v);
-        }
-
-        public dynamic getData()
-        {
-            return Glue.getData();
-        }
+        
+    [External]
+    [Namespace(false)]    
+    public class ActorSheet{
+       public dynamic token;
+       public dynamic defaultOptions(){return null;}//dummy return
+       public dynamic id(){return null;}//dummy return
+       public dynamic title(){return null;}//dummy return
+       public dynamic actor(){return null;}//dummy return
+       public dynamic getData(){return null;}//dummy return
+       public dynamic _render(dynamic force, dynamic options){return null;}//dummy return
+       public dynamic _getHeaderButtons(){return null;}//dummy return
+       public dynamic activateListeners(dynamic html){return null;}//dummy return
+       public dynamic _onConfigureToken(dynamic event){return null;}//dummy return
+       public dynamic _onConfigureSheet(dynamic event){return null;}//dummy return
+       public dynamic _onEditImage(dynamic event){return null;}//dummy return
+       public dynamic _canDragStart(dynamic selector){return null;}//dummy return
+       public dynamic _canDragDrop(dynamic selector){return null;}//dummy return
+       public dynamic _onDragStart(dynamic event){return null;}//dummy return
+       public dynamic _onDragItemStart(dynamic event){return null;}//dummy return
+       public dynamic _onDrop(dynamic event){return null;}//dummy return
+       public dynamic _onSortItem(dynamic event, dynamic itemData){return null;}//dummy return
+       public dynamic _getSortSiblings(dynamic source){return null;}//dummy return
 
     }
+        
 }

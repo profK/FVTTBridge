@@ -1,25 +1,21 @@
-﻿using Bridge;
-using Bridge.jQuery2;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
+using Bridge;
+using System;
+        
+        
 namespace FVTTBridge.Bindings
 {
+        
     [External]
-    [Namespace(false)]
-    public class CanvasLayer
-    {
-        public virtual Promise draw()
-        {
-            //dummy
-            return null;
-        }
-
-        public virtual void tearDown() { }
-
+    [Namespace(false)]    
+    public class CanvasLayer{
+       public dynamic _active;
+       public dynamic name(){return null;}//dummy return
+       public dynamic tearDown(){return null;}//dummy return
+       public dynamic draw(){return null;}//dummy return
+       public dynamic activate(){return null;}//dummy return
+       public dynamic deactivate(){return null;}//dummy return
 
     }
+        
 }

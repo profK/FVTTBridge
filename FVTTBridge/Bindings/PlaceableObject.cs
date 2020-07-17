@@ -1,123 +1,75 @@
-﻿using Bridge;
-using Bridge.jQuery2;
-using Retyped;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static Retyped.pixi_js;
 
+using Bridge;
+using System;
+        
+        
 namespace FVTTBridge.Bindings
 {
-    [External]
-    [Namespace(false)]
-    public class PlaceableObject:PIXI.Container
-    {
-        #region fields
-        public static string embeddedName;
-        public static PlaceablesLayer layer;
-        public PIXI.Point center;
-        public ControlIcon controlIcon;
-        public dynamic data;
-        public PIXI.Polygon fov;
-        public string id;
-        public PIXI.Polygon los;
-        public MouseInteractionManager mouseInteractionManager;
-        public Scene scene;
-        public FormApplication sheet;
-        public string uuid;
-        public dynamic vision;
-        #endregion
-
-        #region methods
-        public PlaceableObject create()
-        {
-            //dummy
-            return null;
-        }
-
-       
-
-        public virtual bool can(User user, string action)
-        {
-            //dummy
-            return false;
-        }
-
-        public virtual PlaceableObject clear()
-        {
-            //dummy
-            return null;
-        }
-
-        public virtual PlaceableObject clone()
-        {
-            //dummy
-            return null;
-        }
-
-        public virtual  bool control(dynamic options)
-        {
-            //dummy
-            return false;
-        }
-
-        public virtual void delete() { }
-
         
+    [External]
+    [Namespace(false)]    
+    public class PlaceableObject{
+       public dynamic mouseInteractionManager;
+       public dynamic _hover;
+       public dynamic controlIcon;
+       public dynamic _sheet;
+       public dynamic _controlled;
+       public dynamic data;
+       public dynamic scene;
+       public dynamic vision;
+       public dynamic center(){return null;}//dummy return
+       public dynamic id(){return null;}//dummy return
+       public dynamic fov(){return null;}//dummy return
+       public dynamic embeddedName(){return null;}//dummy return
+       public dynamic layer(){return null;}//dummy return
+       public dynamic layer(){return null;}//dummy return
+       public dynamic los(){return null;}//dummy return
+       public dynamic sheet(){return null;}//dummy return
+       public dynamic uuid(){return null;}//dummy return
+       public dynamic can(dynamic user, dynamic action){return null;}//dummy return
+       public dynamic _canHUD(dynamic user, dynamic event){return null;}//dummy return
+       public dynamic _canConfigure(dynamic user, dynamic event){return null;}//dummy return
+       public dynamic _canControl(dynamic user, dynamic event){return null;}//dummy return
+       public dynamic _canView(dynamic user, dynamic event){return null;}//dummy return
+       public dynamic _canCreate(dynamic user, dynamic event){return null;}//dummy return
+       public dynamic _canDrag(dynamic user, dynamic event){return null;}//dummy return
+       public dynamic _canHover(dynamic user, dynamic event){return null;}//dummy return
+       public dynamic _canUpdate(dynamic user, dynamic event){return null;}//dummy return
+       public dynamic _canDelete(dynamic user, dynamic event){return null;}//dummy return
+       public dynamic clear(){return null;}//dummy return
+       public dynamic clone(){return null;}//dummy return
+       public dynamic draw(){return null;}//dummy return
+       public dynamic _drawPrimarySprite(dynamic texture){return null;}//dummy return
+       public dynamic refresh(){return null;}//dummy return
+       public dynamic create(dynamic data, dynamic options){return null;}//dummy return
+       public dynamic update(dynamic data, dynamic options){return null;}//dummy return
+       public dynamic delete(dynamic options){return null;}//dummy return
+       public dynamic getFlag(dynamic scope, dynamic key){return null;}//dummy return
+       public dynamic setFlag(dynamic scope, dynamic key, dynamic value){return null;}//dummy return
+       public dynamic unsetFlag(dynamic scope, dynamic key){return null;}//dummy return
+       public dynamic _onCreate(){return null;}//dummy return
+       public dynamic _onUpdate(dynamic data){return null;}//dummy return
+       public dynamic _onDelete(){return null;}//dummy return
+       public dynamic control(dynamic options){return null;}//dummy return
+       public dynamic _onControl(dynamic options){return null;}//dummy return
+       public dynamic release(dynamic options){return null;}//dummy return
+       public dynamic _onRelease(dynamic options){return null;}//dummy return
+       public dynamic rotate(dynamic angle, dynamic snap){return null;}//dummy return
+       public dynamic _updateRotation(optionsObject){return null;}//dummy return
+       public dynamic _getShiftedPosition(dynamic dx, dynamic dy){return null;}//dummy return
+       public dynamic activateListeners(){return null;}//dummy return
+       public dynamic _createInteractionManager(){return null;}//dummy return
+       public dynamic _onHoverIn(dynamic event, optionsObject){return null;}//dummy return
+       public dynamic _onHoverOut(dynamic event){return null;}//dummy return
+       public dynamic _onClickLeft(dynamic event){return null;}//dummy return
+       public dynamic _onClickLeft2(dynamic event){return null;}//dummy return
+       public dynamic _onClickRight(dynamic event){return null;}//dummy return
+       public dynamic _onClickRight2(dynamic event){return null;}//dummy return
+       public dynamic _onDragLeftStart(dynamic event){return null;}//dummy return
+       public dynamic _onDragLeftMove(dynamic event){return null;}//dummy return
+       public dynamic _onDragLeftDrop(dynamic event){return null;}//dummy return
+       public dynamic _onDragLeftCancel(dynamic event){return null;}//dummy return
 
-        public virtual dynamic getFlag(string scope, string key)
-        {
-            //dummy
-            return null;
-        }
-
-       
-
-        public virtual bool release(dynamic options)
-        {
-            //dummy
-            return false;
-        }
-
-        public virtual Promise rotate(float angle, float snap)
-        {
-            //dummy
-            return null;
-        }
-
-        public virtual Promise setFlag(string scope, string key, dynamic value)
-        {
-            //dummy
-            return null;
-        }
-
-        public virtual Promise unsetFlag(string scope, string key)
-        {
-            //dummy
-            return null;
-        }
-
-
-        public virtual void update() { }
-
-        #endregion
-
-        #region callbacks
-        public virtual void activateListeners() { }
-
-        public virtual PlaceableObject draw()
-        {
-            //dummy
-            return null;
-        }
-
-        public virtual PlaceableObject refresh()
-        {
-            //dummy
-            return null;
-        }
-        #endregion
     }
+        
 }

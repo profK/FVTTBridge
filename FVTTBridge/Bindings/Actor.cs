@@ -1,360 +1,44 @@
-﻿using Bridge;
-using Bridge.jQuery2;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
+using Bridge;
+using System;
+        
+        
 namespace FVTTBridge.Bindings
 {
+        
+    [External]
+    [Namespace(false)]    
+    public class Actor{
+       public dynamic _tokenImages;
+       public dynamic token;
+       public dynamic config(){return null;}//dummy return
+       public dynamic prepareData(){return null;}//dummy return
+       public dynamic prepareEmbeddedEntities(){return null;}//dummy return
+       public dynamic img(){return null;}//dummy return
+       public dynamic itemTypes(){return null;}//dummy return
+       public dynamic isPC(){return null;}//dummy return
+       public dynamic isToken(){return null;}//dummy return
+       public dynamic fromToken(dynamic token){return null;}//dummy return
+       public dynamic createTokenActor(dynamic baseActor, dynamic token){return null;}//dummy return
+       public dynamic getActiveTokens(dynamic linked){return null;}//dummy return
+       public dynamic getRollData(){return null;}//dummy return
+       public dynamic getTokenImages(){return null;}//dummy return
+       public dynamic modifyTokenAttribute(dynamic attribute, dynamic value, dynamic isDelta, dynamic isBar){return null;}//dummy return
+       public dynamic update(dynamic data, dynamic options){return null;}//dummy return
+       public dynamic delete(dynamic options){return null;}//dummy return
+       public dynamic createEmbeddedEntity(params dynamic[] args){return null;}//dummy return
+       public dynamic updateEmbeddedEntity(params dynamic[] args){return null;}//dummy return
+       public dynamic deleteEmbeddedEntity(params dynamic[] args){return null;}//dummy return
+       public dynamic _onUpdate(dynamic data, dynamic options, dynamic userId, dynamic context){return null;}//dummy return
+       public dynamic _onCreateEmbeddedEntity(dynamic embeddedName, dynamic child, dynamic options, dynamic userId){return null;}//dummy return
+       public dynamic _onUpdateEmbeddedEntity(dynamic embeddedName, dynamic child, dynamic updateData, dynamic options, dynamic userId){return null;}//dummy return
+       public dynamic _onDeleteEmbeddedEntity(dynamic embeddedName, dynamic child, dynamic options, dynamic userId){return null;}//dummy return
+       public dynamic importItemFromCollection(dynamic collection, dynamic entryId){return null;}//dummy return
+       public dynamic getOwnedItem(dynamic itemId){return null;}//dummy return
+       public dynamic createOwnedItem(dynamic itemData, dynamic options){return null;}//dummy return
+       public dynamic updateOwnedItem(dynamic itemData, dynamic options){return null;}//dummy return
+       public dynamic deleteOwnedItem(dynamic itemId, dynamic options){return null;}//dummy return
 
-    public class Actor
-    {
-        internal ActorGlue Glue { get; set; }
-
-        public Actor() { }
-        public Actor(ActorGlue glue)
-        {
-            Glue = glue;
-        }
-
-       
-        #region Accessors
-        public dynamic config
-        {
-            get
-            {
-                return Glue.config;
-            }
-        }
-
-        public dynamic apps
-        {
-            get
-            {
-                return Glue.apps;
-            }
-        }
-
-        public Compendium compenidum
-        {
-            get
-            {
-                return Glue.compendium;
-            }
-        }
-
-        public dynamic data
-        {
-            get
-            {
-                return Glue.data;
-            }
-        }
-
-        public Folder folder
-        {
-            get
-            {
-                return Glue.folder;
-            }
-        }
-
-        public string id
-        {
-            get
-            {
-                return Glue.id;
-            }
-        }
-
-        public string img
-        {
-            get
-            {
-                return Glue.img;
-            }
-        }
-
-        public bool isPC
-        {
-            get
-            {
-                return Glue.isPC;
-            }
-        }
-
-        public bool isToken
-        {
-            get
-            {
-                return Glue.isToken;
-            }
-        }
-
-        public FVTTBridge.Bindings.Collection items {
-            get {
-                return Glue.items;
-            }
-        }
-
-        public FVTTBridge.Bindings.Collection itemTypes
-        {
-            get
-            {
-                return Glue.itemTypes;
-            }
-        }
-
-        public bool limited
-        {
-            get
-            {
-                return Glue.limited;
-            }
-        }
-
-        public string name
-        {
-            get
-            {
-                return Glue.name;
-            }
-        }
-
-        public dynamic options
-        {
-            get
-            {
-                return Glue.options;
-            }
-        }
-
-        public bool owner
-        {
-            get
-            {
-                return Glue.owner;
-            }
-        }
-
-        public float  permission
-        {
-            get
-            {
-                return Glue.permission;
-            }
-        }
-
-        public BaseEntitySheet sheet
-        {
-            get
-            {
-                return Glue.sheet;
-            }
-        }
-
-        public Token token
-        {
-            get
-            {
-                return Glue.token;
-            }
-        }
-
-        public string uuid
-        {
-            get
-            {
-                return Glue.uuid;
-            }
-        }
-
-        public bool visible
-        {
-            get
-            {
-                return Glue.visible;
-            }
-        }
-        #endregion
-
-        #region Methods
-
-        public static Actor createTokenActor(Actor baseActor, Token token) {
-            return ActorGlue.createTokenActor(baseActor, token);
-        }
-
-        public static Actor fromToken(Token token)
-        {
-            return ActorGlue.fromToken(token);
-        }
-       
-        public Promise clone(dynamic createData, dynamic options)
-        {
-            return Glue.clone(createData, options);
-        }
-
-        public Promise createEmbeddedEntity(string embeddedName,dynamic data,
-            dynamic options)
-        {
-            return Glue.createEmbeddedEntity(embeddedName, data, options);
-        }
-
-        public dynamic delete(dynamic optsToDelete)
-        {
-            return Glue.delete(optsToDelete);
-        }
-
-        public Promise deleteEmbeddedEntity(string embeddedName, dynamic data, 
-            dynamic options)
-        {
-            return Glue.deleteEmbeddedEntity(embeddedName, data, options);
-        }
-
-        public Promise deleteOwnedItem(string itemId, dynamic options)
-        {
-            return Glue.deleteOwnedItem(itemId, options);
-        }
-
-        public void exportToJSON()
-        {
-            Glue.exportToJSON();
-        }
-
-        public Token[] getActiveTokens(bool linkedopt)
-        {
-            return Glue.getActiveTokens(linkedopt);
-        }
-
-        public Entity[] getEmbeddedCollection(string embeddedName)
-        {
-            return Glue.getEmbeddedCollection(embeddedName);
-        }
-
-        public dynamic getFlag(string scope, string key)
-        {
-            return Glue.getFlag(scope, key);
-        }
-
-        public Item getOwnedItem(object v)
-        {
-            return Glue.getOwnedItem(v);
-        }
-
-        public dynamic getRollData()
-        {
-            return Glue.getRollData();
-        }
-
-        public Promise getTokenImages()
-        {
-            return Glue.getTokenImages();
-        }
-
-        public bool hasPerm(User user, dynamic permission, bool exact)
-        {
-            return Glue.hasPerm(user, permission, exact);
-        }
-
-
-        public Promise importFromJSON(string json)
-        {
-            return Glue.importFromJSON(json);
-        }
-
-        public Promise importFromJSONDialog()
-        {
-            return Glue.importFromJSONDialog();
-        }
-
-        public void importItemFromCollection(string collection, string entryId)
-        {
-            Glue.importItemFromCollection(collection, entryId);
-        }
-
-        public Promise modifyTokenAttribute(string attribute, float value, 
-            bool isDelta, bool isBar)
-        {
-            return Glue.modifyTokenAttribute(attribute, value, isDelta, isBar);
-        }
-
-        public Promise setFlag(string scope, string key, dynamic value)
-        {
-            return Glue.setFlag(scope, key, value);
-        }
-
-        public void sortRelative()
-        {
-            Glue.sortRelative();
-        }
-
-        public dynamic toJSON()
-        {
-            return Glue.toJSON();
-        }
-
-        public Promise unsetFlag(string scope, string key)
-        {
-            return Glue.unsetFlag(scope, key);
-        }
-
-        public Promise update(dynamic data, dynamic options)
-        {
-            return Glue.update(data, options);
-        }
-
-        public Promise updateEmbeddedEntity(string embeddedName, 
-            dynamic data, dynamic options)
-        {
-            return Glue.updateEmbeddedEntity(embeddedName, data, options);
-        }
-
-        public Promise updateOwnedItem(dynamic itemData, dynamic options)
-        {
-            return Glue.updateOwnedItem(itemData, options);
-        }
-
-
-
-      
-
-
-        public void DeleteOwnedItem(object v)
-        {
-            Glue.DeleteOwnedItem(v);
-        }
-        #endregion
-
-        #region Callbacks
-        public virtual dynamic PrepareData(dynamic data)
-        {
-            return data;
-        }
-
-        public virtual void initialize()
-        {
-            Glue.initialize();
-        }
-
-        public virtual void prepareData()
-        {
-            Glue.prepareData();
-        }
-
-        public virtual void prepareEmbeddedEntities()
-        {
-            Glue.prepareEmbeddedEntities();
-        }
-
-        public virtual void render(bool force, dynamic context)
-        {
-            Glue.render(force, context);
-        }
-
-        #endregion
     }
+        
 }

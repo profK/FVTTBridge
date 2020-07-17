@@ -1,24 +1,20 @@
-﻿using Bridge;
-using System.Runtime.InteropServices;
-using static Retyped.es2015_collection;
 
+using Bridge;
+using System;
+        
+        
 namespace FVTTBridge.Bindings
 {
+        
     [External]
-    [Namespace(false)]
-    public class GridHighLight
-    {
-        public string name;
-        public Set<float[]> positions;
-
-        public void clear(params float[] args) { } //param guess
-
-        public bool highlight(float x, float y) {
-            //dummy
-            return false;
-        }
-
-
+    [Namespace(false)]    
+    public class GridHighlight{
+       public dynamic name;
+       public dynamic positions;
+       public dynamic highlight(dynamic x, dynamic y){return null;}//dummy return
+       public dynamic clear(params dynamic[] args){return null;}//dummy return
+       public dynamic destroy(params dynamic[] args){return null;}//dummy return
 
     }
+        
 }

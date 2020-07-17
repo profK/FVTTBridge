@@ -1,42 +1,30 @@
-﻿using Bridge;
-using Bridge.jQuery2;
-using System;
-using System.Collections;
 
+using Bridge;
+using System;
+        
+        
 namespace FVTTBridge.Bindings
 {
+        
     [External]
-    [Namespace(false)]
-    public class EntityCollection:Collection
-    {
-        public static EntityCollection instance;
-        public dynamic[] _source;
-        public dynamic[] apps;
-        public SidebarDirectory directory;
-        public string entity;
-        public Entity[] entries;
-        public string name;
-        [Name("object")]
-        public Type typeObject;
-        public Entity getName(string name, bool strict)
-        {
-            //dummy 
-            return null;
-        }
+    [Namespace(false)]    
+    public class EntityCollection{
+       public dynamic _source;
+       public dynamic apps;
+       public dynamic _initialize(dynamic data){return null;}//dummy return
+       public dynamic entities(){return null;}//dummy return
+       public dynamic render(params dynamic[] args){return null;}//dummy return
+       public dynamic name(){return null;}//dummy return
+       public dynamic instance(){return null;}//dummy return
+       public dynamic directory(){return null;}//dummy return
+       public dynamic object(){return null;}//dummy return
+       public dynamic entity(){return null;}//dummy return
+       public dynamic getName(dynamic name, optionsObject){return null;}//dummy return
+       public dynamic insert(dynamic entity){return null;}//dummy return
+       public dynamic remove(dynamic id){return null;}//dummy return
+       public dynamic importFromCollection(dynamic collection, dynamic entryId, dynamic updateData, dynamic options){return null;}//dummy return
+       public dynamic fromCompendium(dynamic data){return null;}//dummy return
 
-        public Promise importFromCollection(string collection, string entryId, dynamic updateDataopt, dynamic optionsopt)
-        {
-            //dummy
-            return null;
-        }
-
-        public void insert(Entity entity) { }
-
-        public void remove(string id) { }
-
-        public EntityCollection render() {
-            //dummy
-            return null;
-        }
     }
+        
 }

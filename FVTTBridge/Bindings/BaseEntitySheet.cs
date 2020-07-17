@@ -1,34 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Bridge;
-using Bridge.Html5;
-using Bridge.jQuery2;
 
+using Bridge;
+using System;
+        
+        
 namespace FVTTBridge.Bindings
 {
+        
     [External]
-    [Namespace(false)]
-    public class BaseEntitySheet:FormApplication
-    {
-        public BaseEntitySheet (object objects):base(objects) { }
-        public BaseEntitySheet(object objects, object options):base(objects,options) { }
-        #region fields
+    [Namespace(false)]    
+    public class BaseEntitySheet{
+       public dynamic entity(){return null;}//dummy return
+       public dynamic isEditable(){return null;}//dummy return
+       public dynamic defaultOptions(){return null;}//dummy return
+       public dynamic title(){return null;}//dummy return
+       public dynamic getData(){return null;}//dummy return
+       public dynamic _getHeaderButtons(){return null;}//dummy return
+       public dynamic _updateObject(dynamic event, dynamic formData){return null;}//dummy return
 
-        public Entity entity;
-       
-        #endregion
-
-        public void render(bool force = false)
-        {
-            //dummy not generated
-        }
-
-        public void render(bool force, dynamic opts)
-        {
-            //dummy not generated
-        }
     }
+        
 }

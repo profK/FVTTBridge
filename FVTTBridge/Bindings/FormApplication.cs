@@ -1,82 +1,38 @@
-﻿using Bridge;
-using Bridge.Html5;
-using Bridge.jQuery2;
-using Retyped.Primitive;
 
+using Bridge;
+using System;
+        
+        
 namespace FVTTBridge.Bindings
 {
-    public class FormApplication:Application
-    {
-        public FormApplication(object objects) { }
-        public FormApplication(object objects, object options) { }
-
-
-        #region 
-        public new static dynamic defaultOptions;
-
-        public new float appId;
-        public dynamic editors;
-        public new jQuery element;
-        public jQuery[] filepickers;
-        public HTMLElement form;
-        public new string id;
-        public Boolean isEditable;
-        [Name("object")]
-        public dynamic targetObj;
-        public new dynamic options;
-        public new Boolean popOut;
-        public new dynamic position;
-        public new Boolean rendered;
-        public new string template;
-        public new string title;
-        #endregion
-
-        #region methods
-        public override void activateListeners(jQuery html)
-        {
-            //dummy
-            base.activateListeners(html);
-        }
-
-        public override Promise close()
-        {
-            //dummy
-            return base.close();
-        }
-
-        public override Promise getData()
-        {
-            //dummy
-            return base.getData();
-        }
-
-        public override Promise maximize()
-        {
-            //dummy
-            return base.maximize();
-        }
-
-        public override Promise minimize()
-        {
-            //dummy
-            return base.minimize();
-        }
-
-        public override void render(bool force, dynamic options) { }
-
-        public override dynamic setPosition(float left, float top, float width, float height, float scale)
-        {
-            //dummy
-            return base.setPosition(left, top, width, height, scale);
-        }
-
-        public virtual FormApplication submit(dynamic options)
-        {
-            //dummy
-            return null;
-        }
-
-        #endregion
+        
+    [External]
+    [Namespace(false)]    
+    public class FormApplication{
+       public dynamic object;
+       public dynamic filepickers;
+       public dynamic editors;
+       public dynamic form;
+       public dynamic defaultOptions(){return null;}//dummy return
+       public dynamic isEditable(){return null;}//dummy return
+       public dynamic getData(dynamic options){return null;}//dummy return
+       public dynamic _render(params dynamic[] args){return null;}//dummy return
+       public dynamic _renderInner(params dynamic[] args){return null;}//dummy return
+       public dynamic _getFormData(dynamic form){return null;}//dummy return
+       public dynamic activateListeners(dynamic html){return null;}//dummy return
+       public dynamic _disableFields(dynamic form){return null;}//dummy return
+       public dynamic _onSubmit(dynamic event, optionsObject){return null;}//dummy return
+       public dynamic _onChangeInput(dynamic event){return null;}//dummy return
+       public dynamic _onChangeColorPicker(dynamic event){return null;}//dummy return
+       public dynamic _onChangeRange(dynamic event){return null;}//dummy return
+       public dynamic _updateObject(dynamic event, dynamic formData){return null;}//dummy return
+       public dynamic _activateEditor(dynamic div){return null;}//dummy return
+       public dynamic _createEditor(dynamic target, dynamic editorOptions, dynamic initialContent){return null;}//dummy return
+       public dynamic _onEditorSave(dynamic target, dynamic element, dynamic content){return null;}//dummy return
+       public dynamic _activateFilePicker(dynamic button){return null;}//dummy return
+       public dynamic close(dynamic options){return null;}//dummy return
+       public dynamic submit(dynamic options){return null;}//dummy return
 
     }
+        
 }

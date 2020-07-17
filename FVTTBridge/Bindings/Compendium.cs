@@ -1,108 +1,52 @@
-﻿using Bridge;
-using Bridge.jQuery2;
-using System;
-using System.Runtime.CompilerServices;
-using static Retyped.es2015_core;
 
+using Bridge;
+using System;
+        
+        
 namespace FVTTBridge.Bindings
 {
+        
     [External]
-    [Namespace(false)]
-    public class Compendium
-    {
-        public Compendium(dynamic metadata, dynamic optioins) { }
-
-        public static dynamic defaultOptions;
-
-        public Entity cls;
-
-        public string collection;
-
-        public string entity;
-        public Array<Entity> index;
-        public bool locked;
-        public dynamic metadata;
-        [Name("private")]
-        public bool isPrivate;
-        public string title;
-
-        public Promise create(dynamic metadata, dynamic options)
-        {
-            //dummy
-            return null;
-        }
-
-        public void close() { }
-        public Promise configure(dynamic settings) {
-            //dummy
-            return null;
-        }
-
-        public Promise createEntity(dynamic data, dynamic options)
-        {
-            //dummy
-            return null;
-        }
-
-        public Promise delete()
-        {
-            //dummy
-            return null;
-        }
-
-        public Promise deleteEntity(string id, dynamic options)
-        {
-            //dummy
-            return null;
-        }
-        public Promise duplicate(string label)
-        {
-            //dummy
-            return null;
-        }
-        public Promise getContent()
-        {
-            //dummy
-            return null;
-        }
-        public virtual dynamic getData()
-        {
-            //DUMMY
-            return null;
-        }
-
-        public virtual Promise getEntity(string entryId)
-        {
-            //dummy
-            return null;
-        }
-
-        public virtual Promise getIndex()
-        {
-            //dummy
-            return null;
-        }
-
-        public Promise importEntity(Entity entity)
-        {
-            //dummy
-            return null;
-        }
-
-        public Promise migrate()
-        {
-            //dummy
-            return null;
-        }
-
-        public void search(string searchString) { }
-
-        public Promise updateEntity(dynamic data, dynamic options)
-        {
-            //dummy
-            return null;
-        }
-
+    [Namespace(false)]    
+    public class Compendium{
+       public dynamic locked;
+       public dynamic private;
+       public dynamic searchString;
+       public dynamic _filterTimeout;
+       public dynamic metadata;
+       public dynamic index;
+       public dynamic defaultOptions(){return null;}//dummy return
+       public dynamic title(){return null;}//dummy return
+       public dynamic collection(){return null;}//dummy return
+       public dynamic entity(){return null;}//dummy return
+       public dynamic cls(){return null;}//dummy return
+       public dynamic getData(dynamic options){return null;}//dummy return
+       public dynamic close(){return null;}//dummy return
+       public dynamic create(dynamic metadata, dynamic options){return null;}//dummy return
+       public dynamic configure(dynamic settings){return null;}//dummy return
+       public dynamic delete(){return null;}//dummy return
+       public dynamic duplicate(optionsObject){return null;}//dummy return
+       public dynamic getIndex(){return null;}//dummy return
+       public dynamic getContent(){return null;}//dummy return
+       public dynamic getEntry(dynamic entryId){return null;}//dummy return
+       public dynamic getEntity(dynamic entryId){return null;}//dummy return
+       public dynamic _toEntity(dynamic entryData){return null;}//dummy return
+       public dynamic importEntity(dynamic entity){return null;}//dummy return
+       public dynamic createEntity(dynamic data, dynamic options){return null;}//dummy return
+       public dynamic updateEntity(dynamic data, dynamic options){return null;}//dummy return
+       public dynamic deleteEntity(dynamic id, dynamic options){return null;}//dummy return
+       public dynamic migrate(dynamic options){return null;}//dummy return
+       public dynamic search(dynamic searchString){return null;}//dummy return
+       public dynamic _assertUserCanModify(optionsObject){return null;}//dummy return
+       public dynamic activateListeners(dynamic html){return null;}//dummy return
+       public dynamic _onFilterResults(dynamic event){return null;}//dummy return
+       public dynamic _onEntry(dynamic entryId){return null;}//dummy return
+       public dynamic _canDragStart(dynamic selector){return null;}//dummy return
+       public dynamic _canDragDrop(dynamic selector){return null;}//dummy return
+       public dynamic _onDragStart(dynamic event){return null;}//dummy return
+       public dynamic _onDrop(dynamic event){return null;}//dummy return
+       public dynamic _contextMenu(dynamic html){return null;}//dummy return
 
     }
+        
 }

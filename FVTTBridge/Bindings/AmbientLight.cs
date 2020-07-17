@@ -1,44 +1,28 @@
-﻿using Bridge;
-using FVTTBridge.Bindings;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
+using Bridge;
+using System;
+        
+        
 namespace FVTTBridge.Bindings
 {
+        
     [External]
-    [Namespace(false)]
-    public class AmbientLight:PlaceableObject
-    {
-        #region fields
-        public new static string embeddedName;
-        public float brightRadius;
-        public bool global;
-        public bool isVisible;
-        #endregion
+    [Namespace(false)]    
+    public class AmbientLight{
+       public dynamic embeddedName(){return null;}//dummy return
+       public dynamic global(){return null;}//dummy return
+       public dynamic dimRadius(){return null;}//dummy return
+       public dynamic brightRadius(){return null;}//dummy return
+       public dynamic isVisible(){return null;}//dummy return
+       public dynamic draw(){return null;}//dummy return
+       public dynamic _drawField(){return null;}//dummy return
+       public dynamic _drawControlIcon(){return null;}//dummy return
+       public dynamic refresh(){return null;}//dummy return
+       public dynamic computeFOV(optionsObject){return null;}//dummy return
+       public dynamic _onCreate(params dynamic[] args){return null;}//dummy return
+       public dynamic _onUpdate(params dynamic[] args){return null;}//dummy return
+       public dynamic _onDelete(params dynamic[] args){return null;}//dummy return
 
-        #region methods
-        public dynamic computeFOV()
-        {
-            //dummy
-            return null;
-        }
-
-        public override PlaceableObject draw()
-        {
-            //dummy
-            return null;
-        }
-
-        public override PlaceableObject refresh()
-        {
-            //dummy
-            return null;
-        }
-
-
-        #endregion
     }
+        
 }

@@ -1,38 +1,20 @@
-﻿using Bridge;
-using Newtonsoft.Json;
-using System;
-using Bridge.Html5;
-using System.Collections;
 
+using Bridge;
+using System;
+        
+        
 namespace FVTTBridge.Bindings
 {
-    [External]
-    [Namespace(false)]
-    public class Actors:EntityCollection
-    {
-        #region statics
-        public static void unregisterSheet(string sheetName, Type sheetToRemove){}
-        public static void registerSheet(string sheetName, Type sheetToAdd, dynamic sheetOptions) { }
-        #endregion
-
-        #region members
-        public static dynamic[] registeredSheets;
-        public dynamic[] _source;
-        public dynamic[] apps;
-        public SidebarDirectory directory;
-        public string entity;
-        public dynamic[] entires;
-        public string name;
-        [Name("object")] 
-        public dynamic entityObj; //maps to Actors.object in Actors.js
-        public dynamic tokens;
-        #endregion
-
-        #region Methods
         
-        #endregion
-
-
+    [External]
+    [Namespace(false)]    
+    public class Actors{
+       public dynamic tokens;
+       public dynamic object(){return null;}//dummy return
+       public dynamic registerSheet(params dynamic[] args){return null;}//dummy return
+       public dynamic unregisterSheet(params dynamic[] args){return null;}//dummy return
+       public dynamic registeredSheets(){return null;}//dummy return
 
     }
+        
 }

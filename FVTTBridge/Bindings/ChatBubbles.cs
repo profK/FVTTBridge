@@ -1,21 +1,25 @@
-﻿using Bridge.Html5;
-using Bridge.jQuery2;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
+using Bridge;
+using System;
+        
+        
 namespace FVTTBridge.Bindings
 {
-    public class ChatBubbles
-    {
-        public dynamic bubbles;
-        public HTMLElement container;
-        public Promise say(Token token, string message, bool emote)
-        {
-            //dummy
-            return null;
-        }
+        
+    [External]
+    [Namespace(false)]    
+    public class ChatBubbles{
+       public dynamic _panned;
+       public dynamic template;
+       public dynamic bubbles;
+       public dynamic container(){return null;}//dummy return
+       public dynamic say(dynamic token, dynamic message, optionsObject){return null;}//dummy return
+       public dynamic _clearBubble(dynamic token){return null;}//dummy return
+       public dynamic _renderHTML(dynamic data){return null;}//dummy return
+       public dynamic _getMessageDimensions(dynamic message){return null;}//dummy return
+       public dynamic _setPosition(dynamic token, dynamic html, dynamic dimensions){return null;}//dummy return
+       public dynamic _getDuration(dynamic html){return null;}//dummy return
+
     }
+        
 }

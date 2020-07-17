@@ -1,44 +1,22 @@
-﻿using Bridge;
-using System;
 
+using Bridge;
+using System;
+        
+        
 namespace FVTTBridge.Bindings
 {
+        
     [External]
-    [Namespace(false)]
-    public class Collection
-    {
+    [Namespace(false)]    
+    public class Collection{
+       public dynamic this[int i]{get;set;}
+       public dynamic entries(){return null;}//dummy return
+       public dynamic find(dynamic condition){return null;}//dummy return
+       public dynamic filter(dynamic condition){return null;}//dummy return
+       public dynamic get(dynamic key, optionsObject){return null;}//dummy return
+       public dynamic map(dynamic transformer){return null;}//dummy return
+       public dynamic reduce(dynamic evaluator, dynamic initial){return null;}//dummy return
 
-        public dynamic[] entries;
-
-        public dynamic[] filter(Func<dynamic, bool> condition)
-        {
-            //dummy
-            return null;
-        }
-
-        public dynamic find(Func<dynamic, bool> condition)
-        {
-            //dummy
-            return null;
-        }
-
-        public dynamic get(string key, bool strict)
-        {
-            //dummy
-            return null;
-        }
-
-        public dynamic[] map(Func<dynamic, dynamic> transformer)
-        {
-            //dummy
-            return null;
-        }
-
-        //reduce func has params partialSolution,additionalData, returns result
-        public dynamic reduce(Func<dynamic, dynamic, dynamic> reduceFunc)
-        {
-            //dummy
-            return null;
-        }
     }
+        
 }

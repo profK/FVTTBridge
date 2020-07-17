@@ -1,19 +1,24 @@
-﻿using Bridge.jQuery2;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
+using Bridge;
+using System;
+        
+        
 namespace FVTTBridge.Bindings
 {
-    public class AVConfig
-    {
-        static dynamic defaultOptions;
+        
+    [External]
+    [Namespace(false)]    
+    public class AVConfig{
+       public dynamic defaultOptions(){return null;}//dummy return
+       public dynamic getData(){return null;}//dummy return
+       public dynamic activateListeners(dynamic html){return null;}//dummy return
+       public dynamic _setConfigSectionEnabled(dynamic selector, dynamic enabled){return null;}//dummy return
+       public dynamic _onServerTypeChanged(dynamic event){return null;}//dummy return
+       public dynamic _onTurnTypeChanged(dynamic event){return null;}//dummy return
+       public dynamic _onPTTKeyDown(dynamic event){return null;}//dummy return
+       public dynamic _onPTTMouseDown(dynamic event){return null;}//dummy return
+       public dynamic _updateObject(dynamic event, dynamic formData){return null;}//dummy return
 
-        #region methods
-        public void activateListeners(jQuery html) { }
-        public void getData() { }
-        #endregion
     }
+        
 }
