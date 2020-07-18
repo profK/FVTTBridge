@@ -25,7 +25,7 @@ Retyped.node
 Retyped.pixi
 
 ## Setup
-** Make sure that the porperties of all files in the Resources tree are to to "copy if newer" **
+**Make sure that the properties of all files in the Resources tree are set to "copy if newer"**
 
 ## Usages Notes
 
