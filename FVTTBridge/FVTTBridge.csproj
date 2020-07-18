@@ -79,6 +79,8 @@
     <Compile Include="Bindings\SidebarTab.cs" />
     <Compile Include="Bindings\Token.cs" />
     <Compile Include="Bindings\User.cs" />
+    <Compile Include="BridgeActor.cs" />
+    <Compile Include="BridgeActorSheet.cs" />
     <Compile Include="CombatEncounters.cs" />
     <Compile Include="FoundryModule.cs" />
     <Compile Include="GlobalSuppressions.cs" />
@@ -146,12 +148,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ActorGlue.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="ActorSheetGlue.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <Content Include="Resources\styles\simple.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

@@ -19,7 +19,7 @@ class ActorSheetGlue extends ActorSheet {
     constructor(actor,options) {
         super(actor,options);
         this.BridgeActorSheet = FVTTBridge.Bindings.FoundrySystem.Instance.MakeActorSheet(this);
-        FVTT
+      
     }
     
 
@@ -40,11 +40,13 @@ class ActorSheetGlue extends ActorSheet {
 class ActorGlue extends Actor {
     constructor(...args) {
         super(...args);
-        this.Actor = FVTTBridge.Bindings.FoundrySystem.Instance.MakeActor(this);
     }
 
-    prepareData() {
+    static prepareData() {
         super.prepareData();
+        if (typeof this.Actor == undefined){
+            this.Actor = FVTTBridge.Bindings.FoundrySystem.Instance.MakeActor(this);
+        }
         this.data = this.Actor.PrepareData(this.data);
     }
 

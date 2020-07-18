@@ -3,8 +3,9 @@ using Newtonsoft.Json;
 using System;
 using Bridge.Html5;
 using Bridge.jQuery2;
+using FVTTBridge.Bindings;
 
-namespace FVTTBridge.Bindings
+namespace FVTTBridge
 {
     [External]
     [Namespace(false)]

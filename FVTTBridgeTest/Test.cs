@@ -33,7 +33,7 @@ namespace FVTTBridgeTest
         {
             get
             {
-                return typeof(ActorSheet);
+                return typeof(TestActorSheet);
             }
         }
 

@@ -36,7 +36,7 @@ namespace FVTTBridge.Bindings
         {
             get
             {
-                return typeof(Actor);
+                return typeof(BridgeActor);
             }
         }
 
@@ -44,21 +44,20 @@ namespace FVTTBridge.Bindings
         {
             get
             {
-                return typeof(ActorSheet);
+                return typeof(BridgeActorSheet);
             }
         }
 
-        public Actor MakeActor(ActorGlue glue)
+        public BridgeActor MakeActor(ActorGlue glue)
         {
-            Actor actor =  Activator.CreateInstance(ActorType) as Actor;
-            actor.Glue = glue;
+            BridgeActor actor =  Activator.CreateInstance(ActorType,glue) as BridgeActor;
+
             return actor;
         }
 
-        public ActorSheet MakeActorSheet(ActorSheetGlue glue)
+        public BridgeActorSheet MakeActorSheet(ActorSheetGlue glue)
         {
-            ActorSheet actorSheet = Activator.CreateInstance(ActorSheetType) as ActorSheet;
-            actorSheet.Glue = glue;
+            BridgeActorSheet actorSheet = Activator.CreateInstance(ActorSheetType,glue) as BridgeActorSheet;
             return actorSheet;
         }
 
@@ -78,13 +77,13 @@ namespace FVTTBridge.Bindings
         {
             Console.WriteLine("SystemInit Called!");
             //Actors.registerSheet("core",ActorSheetType);
-            Globals.CONFIG.Actor.entityClass = ActorType;
+            Globals.CONFIG.Actor.entityClass = typeof(ActorGlue);
             dynamic sheetOptions = new RawJSObject();
             sheetOptions.makeDefault = true;
             Actors.registerSheet("dnd5e", typeof(ActorSheetGlue), sheetOptions);
             //Items.registerSheet("dnd5e", SimpleItemSheet, { makeDefault: true});
         }
 
-       
+
     }
 }
