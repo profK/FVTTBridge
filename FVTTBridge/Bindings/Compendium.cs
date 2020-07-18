@@ -9,13 +9,13 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Compendium{
-       public dynamic locked;
-       public dynamic _filterTimeout;
-       public dynamic searchString;
-       public dynamic index;
-       [Name("private")]
-       public dynamic isPrivate;
+       public Compendium(dynamic metadata, dynamic options){}//dummy body
        public dynamic metadata;
+       public dynamic index;
+       public dynamic _filterTimeout;
+       public dynamic locked;
+       public dynamic isPrivate;
+       public dynamic searchString;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic title(){return null;}//dummy return
        public dynamic collection(){return null;}//dummy return

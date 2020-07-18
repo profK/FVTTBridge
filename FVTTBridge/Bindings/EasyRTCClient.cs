@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class EasyRTCClient{
+       public EasyRTCClient(dynamic webrtc, dynamic settings){}//dummy body
        public dynamic _callRejections;
        public dynamic _room;
        public dynamic _usernameCache;

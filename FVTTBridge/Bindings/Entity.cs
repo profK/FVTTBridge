@@ -9,10 +9,11 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Entity{
-       public dynamic compendium;
-       public dynamic data;
+       public Entity(dynamic data, dynamic options){}//dummy body
        public dynamic apps;
+       public dynamic data;
        public dynamic options;
+       public dynamic compendium;
        public dynamic config(){return null;}//dummy return
        public dynamic uuid(){return null;}//dummy return
        public dynamic initialize(){return null;}//dummy return

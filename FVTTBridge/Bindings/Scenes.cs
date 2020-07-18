@@ -9,7 +9,8 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Scenes{
-       public dynamic object(){return null;}//dummy return
+       [Name("object")]
+       public dynamic jsobject(){return null;}//dummy return
        public dynamic active(){return null;}//dummy return
        public dynamic viewed(){return null;}//dummy return
        public dynamic socketListeners(dynamic socket){return null;}//dummy return

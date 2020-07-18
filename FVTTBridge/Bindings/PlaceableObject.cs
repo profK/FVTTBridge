@@ -9,14 +9,15 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class PlaceableObject{
-       public dynamic data;
-       public dynamic vision;
+       public PlaceableObject(dynamic data, dynamic scene){}//dummy body
        public dynamic _sheet;
-       public dynamic mouseInteractionManager;
-       public dynamic _controlled;
-       public dynamic controlIcon;
-       public dynamic _hover;
+       public dynamic vision;
        public dynamic scene;
+       public dynamic data;
+       public dynamic _controlled;
+       public dynamic _hover;
+       public dynamic mouseInteractionManager;
+       public dynamic controlIcon;
        public dynamic center(){return null;}//dummy return
        public dynamic id(){return null;}//dummy return
        public dynamic fov(){return null;}//dummy return

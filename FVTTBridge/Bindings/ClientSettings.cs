@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class ClientSettings{
+       public ClientSettings(dynamic worldSettings){}//dummy body
        public dynamic menus;
        public dynamic settings;
        public dynamic storage;

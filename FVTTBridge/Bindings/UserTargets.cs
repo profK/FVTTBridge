@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class UserTargets{
+       public UserTargets(dynamic user){}//dummy body
        public dynamic user;
        public dynamic ids(){return null;}//dummy return
        public dynamic add(dynamic token){return null;}//dummy return

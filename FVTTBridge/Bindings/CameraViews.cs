@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class CameraViews{
+       public CameraViews(dynamic webrtc, dynamic options){}//dummy body
        public dynamic webrtc;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic setUserIsSpeaking(dynamic userId, dynamic speaking){return null;}//dummy return

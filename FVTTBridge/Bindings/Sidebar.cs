@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Sidebar{
+       public Sidebar(params dynamic[] args){}//dummy body
        public dynamic _collapsed;
        public dynamic apps;
        public dynamic defaultOptions(){return null;}//dummy return

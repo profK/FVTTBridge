@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class PlaylistSoundConfig{
+       public PlaylistSoundConfig(dynamic playlist, dynamic sound, dynamic options){}//dummy body
        public dynamic playlist;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic title(){return null;}//dummy return

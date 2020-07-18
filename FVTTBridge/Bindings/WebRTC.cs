@@ -9,15 +9,16 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class WebRTC{
+       public WebRTC(dynamic settings){}//dummy body
        public dynamic _pttMuteTimeout;
-       public dynamic _connected;
-       public dynamic _pttHandlers;
-       public dynamic client;
-       public dynamic config;
        public dynamic settings;
+       public dynamic _pttHandlers;
+       public dynamic config;
        public dynamic _reconnectPeriodMS;
-       public dynamic _speakingData;
+       public dynamic _connected;
+       public dynamic client;
        public dynamic _broadcastingAudio;
+       public dynamic _speakingData;
        public dynamic initialize(){return null;}//dummy return
        public dynamic connect(){return null;}//dummy return
        public dynamic disconnect(){return null;}//dummy return

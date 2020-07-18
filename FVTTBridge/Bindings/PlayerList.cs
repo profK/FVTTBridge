@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class PlayerList{
+       public PlayerList(dynamic options){}//dummy body
        public dynamic _showOffline;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic render(dynamic force, dynamic context){return null;}//dummy return

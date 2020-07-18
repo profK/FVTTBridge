@@ -9,14 +9,15 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class SightLayerSource{
-       public dynamic x;
+       public SightLayerSource(dynamic optionsObject){}//dummy body
+       public dynamic los;
        public dynamic darknessThreshold;
-       public dynamic fov;
        public dynamic y;
-       public dynamic alpha;
        public dynamic channels;
        public dynamic color;
-       public dynamic los;
+       public dynamic fov;
+       public dynamic alpha;
+       public dynamic x;
 
     }
         

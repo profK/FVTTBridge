@@ -9,12 +9,13 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Token{
-       public dynamic targeted;
-       public dynamic _movement;
-       public dynamic _velocity;
-       public dynamic _noAnimate;
+       public Token(params dynamic[] args){}//dummy body
        public dynamic actor;
+       public dynamic targeted;
+       public dynamic _noAnimate;
+       public dynamic _movement;
        public dynamic _validPosition;
+       public dynamic _velocity;
        public dynamic embeddedName(){return null;}//dummy return
        public dynamic owner(){return null;}//dummy return
        public dynamic hasActiveHUD(){return null;}//dummy return

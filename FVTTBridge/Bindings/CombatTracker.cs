@@ -9,9 +9,10 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class CombatTracker{
+       public CombatTracker(dynamic options){}//dummy body
+       public dynamic _highlighted;
        public dynamic trackedResources;
        public dynamic combat;
-       public dynamic _highlighted;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic createPopout(){return null;}//dummy return
        public dynamic initialize(dynamic optionsObject){return null;}//dummy return

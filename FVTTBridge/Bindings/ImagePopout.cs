@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class ImagePopout{
+       public ImagePopout(dynamic src, dynamic options){}//dummy body
        public dynamic _related;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic title(){return null;}//dummy return

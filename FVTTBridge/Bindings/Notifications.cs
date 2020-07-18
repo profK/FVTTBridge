@@ -9,8 +9,9 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Notifications{
-       public dynamic active;
+       public Notifications(dynamic options){}//dummy body
        public dynamic queue;
+       public dynamic active;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic initialize(){return null;}//dummy return
        public dynamic _render(params dynamic[] args){return null;}//dummy return

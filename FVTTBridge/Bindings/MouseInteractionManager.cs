@@ -9,18 +9,18 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class MouseInteractionManager{
-       public dynamic dragTime;
+       public MouseInteractionManager(dynamic jsobject, dynamic layer, dynamic permissions, dynamic callbacks, dynamic options){}//dummy body
        public dynamic permissions;
-       public dynamic lcTime;
-       public dynamic layer;
-       public dynamic state;
-       public dynamic callbacks;
        public dynamic _dragRight;
        public dynamic handlers;
-       public dynamic rcTime;
-       [Name("object")]
+       public dynamic callbacks;
        public dynamic jsobject;
+       public dynamic state;
        public dynamic options;
+       public dynamic lcTime;
+       public dynamic rcTime;
+       public dynamic layer;
+       public dynamic dragTime;
        public dynamic target(){return null;}//dummy return
        public dynamic activate(){return null;}//dummy return
        public dynamic can(dynamic action, dynamic evt){return null;}//dummy return

@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class BaseEntitySheet{
+       public BaseEntitySheet(dynamic jsobject, dynamic options){}//dummy body
        public dynamic entity(){return null;}//dummy return
        public dynamic isEditable(){return null;}//dummy return
        public dynamic defaultOptions(){return null;}//dummy return

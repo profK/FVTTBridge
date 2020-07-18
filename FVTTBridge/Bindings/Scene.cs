@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Scene{
+       public Scene(params dynamic[] args){}//dummy body
        public dynamic _view;
        public dynamic _viewPosition;
        public dynamic config(){return null;}//dummy return

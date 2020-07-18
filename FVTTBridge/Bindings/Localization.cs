@@ -9,8 +9,9 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Localization{
-       public dynamic _fallback;
+       public Localization(){}//dummy body
        public dynamic translations;
+       public dynamic _fallback;
        public dynamic lang;
        public dynamic initialize(){return null;}//dummy return
        public dynamic _discoverLanguages(){return null;}//dummy return

@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class ActorDirectory{
+       public ActorDirectory(params dynamic[] args){}//dummy body
        public dynamic entity(){return null;}//dummy return
        public dynamic collection(){return null;}//dummy return
        public dynamic getData(dynamic options){return null;}//dummy return

@@ -9,8 +9,9 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class WebRTCInterface{
-       public dynamic settings;
+       public WebRTCInterface(dynamic webrtc, dynamic settings){}//dummy body
        public dynamic webrtc;
+       public dynamic settings;
        public dynamic initialize(){return null;}//dummy return
        public dynamic connect(dynamic optionsObject){return null;}//dummy return
        public dynamic disconnect(){return null;}//dummy return

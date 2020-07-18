@@ -9,14 +9,15 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Ruler{
-       public dynamic labels;
-       public dynamic name;
-       public dynamic ruler;
-       public dynamic waypoints;
+       public Ruler(dynamic user, dynamic optionsObject){}//dummy body
        public dynamic user;
-       public dynamic destination;
-       public dynamic color;
        public dynamic _state;
+       public dynamic color;
+       public dynamic name;
+       public dynamic destination;
+       public dynamic waypoints;
+       public dynamic labels;
+       public dynamic ruler;
        public dynamic active(){return null;}//dummy return
        public dynamic measure(dynamic destination, dynamic optionsObject){return null;}//dummy return
        public dynamic _getSegmentLabel(dynamic segmentDistance, dynamic totalDistance, dynamic isTotal){return null;}//dummy return

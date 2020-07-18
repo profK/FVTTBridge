@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Bridge.Html5;
 using Bridge.jQuery2;
+using FVTTBridge;
 using FVTTBridge.Bindings;
 using FVTTBridge.Bindings.HTML;
-using FVTTBridge.Bindings.Bindings;
 
 namespace ProjectGrinder
 {
-    public class PGActorSheet:ActorSheet
+    public class PGActorSheet:BridgeActorSheet
     {
         string _sheetTab = "description";
         
@@ -33,7 +33,7 @@ namespace ProjectGrinder
             dynamic opts = new RawJSObject();
             opts.initial = _sheetTab;
             opts.callback = (ClickCallback)ClickTabSelect;
-            new Tabs(tabs, opts);
+            new FVTTBridge.Bindings.Tabs(tabs, opts);
 
             //
             // Everything below here is only needed if the sheet is editable
@@ -44,14 +44,14 @@ namespace ProjectGrinder
             htmlObject.Find(".item-edit").Click(ev => {
                 jQuery li = jQuery.Select(ev.CurrentTarget).Parents(".item");
                 Item item = Actor.getOwnedItem(li.Data("itemId"));
-                item.sheet.render(true);
+                //item.render(true);
             });
 
             
             // Delete Inventory Item
             htmlObject.Find(".item-delete").Click(ev => {
                 jQuery li = jQuery.Select(ev.CurrentTarget).Parents(".item");
-                Actor.DeleteOwnedItem(li.Data("itemId"));
+                Actor.deleteOwnedItem(li.Data("itemId"),null);
                 li.SlideUp(200, () => Render(false));
             });
             // hook stat roll buttons
@@ -139,7 +139,7 @@ namespace ProjectGrinder
             dynamic opts = new RawJSObject();
             opts.flavor = "Makes a(n) " + statname + " roll...";
 
-            new Roll(rollstr).toMessage(opts);
+            new Roll(rollstr,null).toMessage(null,opts);
             
         }
 

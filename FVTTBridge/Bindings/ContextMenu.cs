@@ -9,11 +9,12 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class ContextMenu{
+       public ContextMenu(dynamic element, dynamic selector, dynamic menuItems, dynamic optionsObject){}//dummy body
        public dynamic element;
-       public dynamic selector;
-       public dynamic menuItems;
        public dynamic _expandUp;
        public dynamic eventName;
+       public dynamic menuItems;
+       public dynamic selector;
        public dynamic menu(){return null;}//dummy return
        public dynamic bind(){return null;}//dummy return
        public dynamic close(){return null;}//dummy return

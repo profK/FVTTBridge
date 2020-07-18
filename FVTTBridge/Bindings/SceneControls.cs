@@ -9,8 +9,9 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class SceneControls{
-       public dynamic activeControl;
+       public SceneControls(dynamic options){}//dummy body
        public dynamic controls;
+       public dynamic activeControl;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic control(){return null;}//dummy return
        public dynamic activeTool(){return null;}//dummy return

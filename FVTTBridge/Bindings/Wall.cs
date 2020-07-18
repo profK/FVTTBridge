@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Wall{
+       public Wall(params dynamic[] args){}//dummy body
        public dynamic doorControl;
        public dynamic embeddedName(){return null;}//dummy return
        public dynamic coords(){return null;}//dummy return

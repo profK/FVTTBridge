@@ -9,20 +9,21 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Canvas{
-       public dynamic app;
-       public dynamic _pendingOperationNames;
-       public dynamic ready;
-       public dynamic id;
-       public dynamic _reload;
-       public dynamic pendingOperations;
-       public dynamic _panTime;
-       public dynamic stage;
-       public dynamic dimensions;
-       public dynamic mouseInteractionManager;
+       public Canvas(){}//dummy body
        public dynamic _zoomTime;
-       public dynamic _dragDrop;
+       public dynamic _panTime;
+       public dynamic _reload;
        public dynamic scene;
+       public dynamic ready;
+       public dynamic dimensions;
+       public dynamic _dragDrop;
+       public dynamic pendingOperations;
+       public dynamic stage;
+       public dynamic mouseInteractionManager;
+       public dynamic app;
+       public dynamic id;
        public dynamic hud;
+       public dynamic _pendingOperationNames;
        public dynamic _createLayers(dynamic stage){return null;}//dummy return
        public dynamic layers(){return null;}//dummy return
        public dynamic activeLayer(){return null;}//dummy return

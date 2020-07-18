@@ -9,13 +9,14 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class WallsLayer{
-       public dynamic walls;
-       public dynamic endpoints;
-       public dynamic _forceSnap;
+       public WallsLayer(){}//dummy body
+       public dynamic _cloneType;
        public dynamic chain;
+       public dynamic endpoints;
+       public dynamic walls;
        public dynamic _chain;
        public dynamic _lastActive;
-       public dynamic _cloneType;
+       public dynamic _forceSnap;
        public dynamic layerOptions(){return null;}//dummy return
        public dynamic blockVision(){return null;}//dummy return
        public dynamic blockMovement(){return null;}//dummy return

@@ -9,9 +9,10 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Combat{
-       public dynamic current;
+       public Combat(params dynamic[] args){}//dummy body
        public dynamic _soundPlaying;
        public dynamic previous;
+       public dynamic current;
        public dynamic config(){return null;}//dummy return
        public dynamic prepareEmbeddedEntities(){return null;}//dummy return
        public dynamic combatants(){return null;}//dummy return

@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class JournalSheet{
+       public JournalSheet(dynamic jsobject, dynamic options){}//dummy body
        public dynamic _sheetMode;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic id(){return null;}//dummy return

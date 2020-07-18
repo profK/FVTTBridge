@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Note{
+       public Note(params dynamic[] args){}//dummy body
        public dynamic entry;
        public dynamic embeddedName(){return null;}//dummy return
        public dynamic text(){return null;}//dummy return

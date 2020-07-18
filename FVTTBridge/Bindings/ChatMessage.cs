@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class ChatMessage{
+       public ChatMessage(params dynamic[] args){}//dummy body
        public dynamic _roll;
        public dynamic user;
        public dynamic config(){return null;}//dummy return

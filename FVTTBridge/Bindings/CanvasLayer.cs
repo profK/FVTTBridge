@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class CanvasLayer{
+       public CanvasLayer(){}//dummy body
        public dynamic _active;
        public dynamic name(){return null;}//dummy return
        public dynamic tearDown(){return null;}//dummy return

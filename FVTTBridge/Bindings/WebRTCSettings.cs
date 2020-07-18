@@ -9,12 +9,13 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class WebRTCSettings{
-       public dynamic _debounceId;
+       public WebRTCSettings(){}//dummy body
        public dynamic _previousWorldSettings;
+       public dynamic _debounceId;
        public dynamic _clientSettings;
-       public dynamic _worldSettings;
        public dynamic _previousUsersEntitySettings;
        public dynamic _previousClientSettings;
+       public dynamic _worldSettings;
        public dynamic getDefaultWorldSettings(){return null;}//dummy return
        public dynamic getDefaultClientSettings(){return null;}//dummy return
        public dynamic getDefaultUserSettings(){return null;}//dummy return

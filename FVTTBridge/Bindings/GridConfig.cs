@@ -9,10 +9,11 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class GridConfig{
-       public dynamic _wheelHandler;
-       public dynamic _dimensions;
+       public GridConfig(dynamic scene, dynamic sheet, params dynamic[] args){}//dummy body
        public dynamic sheet;
        public dynamic _keyHandler;
+       public dynamic _wheelHandler;
+       public dynamic _dimensions;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic getData(dynamic options){return null;}//dummy return
        public dynamic _render(params dynamic[] args){return null;}//dummy return

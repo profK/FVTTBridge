@@ -9,10 +9,11 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class HexagonalGrid{
+       public HexagonalGrid(dynamic options){}//dummy body
        public dynamic h;
+       public dynamic w;
        public dynamic even;
        public dynamic columns;
-       public dynamic w;
        public dynamic pointyHexPoints(){return null;}//dummy return
        public dynamic flatHexPoints(){return null;}//dummy return
        public dynamic draw(){return null;}//dummy return

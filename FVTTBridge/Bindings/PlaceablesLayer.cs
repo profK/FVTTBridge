@@ -9,12 +9,13 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class PlaceablesLayer{
-       public dynamic objects;
-       public dynamic history;
-       public dynamic _controlled;
+       public PlaceablesLayer(){}//dummy body
        public dynamic _copy;
+       public dynamic _controlled;
        public dynamic _hover;
+       public dynamic history;
        public dynamic options;
+       public dynamic objects;
        public dynamic preview;
        public dynamic layerOptions(){return null;}//dummy return
        public dynamic instance(){return null;}//dummy return

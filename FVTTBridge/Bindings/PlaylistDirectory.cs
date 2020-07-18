@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class PlaylistDirectory{
+       public PlaylistDirectory(dynamic options){}//dummy body
        public dynamic _expanded;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic entity(){return null;}//dummy return

@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Collection{
+       public Collection(dynamic entries){}//dummy body
        public dynamic this[int i]{ get { return null; } }
        public dynamic entries(){return null;}//dummy return
        public dynamic find(dynamic condition){return null;}//dummy return

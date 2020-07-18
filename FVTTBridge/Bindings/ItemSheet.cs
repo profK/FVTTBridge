@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class ItemSheet{
+       public ItemSheet(params dynamic[] args){}//dummy body
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic id(){return null;}//dummy return
        public dynamic item(){return null;}//dummy return

@@ -9,12 +9,13 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class MeasuredTemplate{
+       public MeasuredTemplate(params dynamic[] args){}//dummy body
        public dynamic texture;
+       public dynamic template;
        public dynamic _borderThickness;
+       public dynamic controlIcon;
        public dynamic shape;
        public dynamic ruler;
-       public dynamic controlIcon;
-       public dynamic template;
        public dynamic embeddedName(){return null;}//dummy return
        public dynamic borderColor(){return null;}//dummy return
        public dynamic fillColor(){return null;}//dummy return

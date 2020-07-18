@@ -9,13 +9,14 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Drawing{
-       public dynamic _drawTime;
-       public dynamic text;
-       public dynamic shape;
-       public dynamic _fixedPoints;
+       public Drawing(params dynamic[] args){}//dummy body
        public dynamic drawing;
+       public dynamic _drawTime;
+       public dynamic _fixedPoints;
        public dynamic _sampleTime;
+       public dynamic shape;
        public dynamic frame;
+       public dynamic text;
        public dynamic embeddedName(){return null;}//dummy return
        public dynamic author(){return null;}//dummy return
        public dynamic owner(){return null;}//dummy return

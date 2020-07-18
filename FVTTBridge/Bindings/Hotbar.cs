@@ -9,10 +9,11 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Hotbar{
+       public Hotbar(dynamic options){}//dummy body
        public dynamic _collapsed;
-       public dynamic _hover;
-       public dynamic page;
        public dynamic macros;
+       public dynamic page;
+       public dynamic _hover;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic getData(dynamic options){return null;}//dummy return
        public dynamic _getMacrosByPage(dynamic page){return null;}//dummy return

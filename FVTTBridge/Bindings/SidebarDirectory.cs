@@ -9,10 +9,11 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class SidebarDirectory{
-       public dynamic _searchTime;
-       public dynamic folders;
-       public dynamic searchString;
+       public SidebarDirectory(dynamic options){}//dummy body
        public dynamic entities;
+       public dynamic folders;
+       public dynamic _searchTime;
+       public dynamic searchString;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic entity(){return null;}//dummy return
        public dynamic collection(){return null;}//dummy return

@@ -9,20 +9,21 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Game{
-       public dynamic data;
-       public dynamic modules;
-       public dynamic permissions;
-       public dynamic ready;
-       public dynamic video;
-       public dynamic i18n;
+       public Game(dynamic worldData, dynamic sessionId, dynamic socket){}//dummy body
        public dynamic userId;
-       public dynamic sessionId;
+       public dynamic modules;
        public dynamic socket;
+       public dynamic settings;
+       public dynamic permissions;
+       public dynamic keyboard;
+       public dynamic i18n;
        public dynamic audio;
        public dynamic debug;
-       public dynamic keyboard;
+       public dynamic ready;
+       public dynamic data;
        public dynamic loading;
-       public dynamic settings;
+       public dynamic sessionId;
+       public dynamic video;
        public dynamic create(){return null;}//dummy return
        public dynamic connect(dynamic sessionId){return null;}//dummy return
        public dynamic getCookies(){return null;}//dummy return

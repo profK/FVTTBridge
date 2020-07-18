@@ -9,11 +9,12 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class KeyboardManager{
+       public KeyboardManager(){}//dummy body
        public dynamic _moveKeys;
        public dynamic _downKeys;
+       public dynamic _moveTime;
        public dynamic _handled;
        public dynamic _wheelTime;
-       public dynamic _moveTime;
        public dynamic _tabState;
        public dynamic _reset(){return null;}//dummy return
        public dynamic isDown(dynamic code){return null;}//dummy return

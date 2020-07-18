@@ -9,11 +9,12 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Draggable{
-       public dynamic app;
-       public dynamic element;
-       public dynamic handle;
-       public dynamic handlers;
+       public Draggable(dynamic app, dynamic element, dynamic handle, dynamic resizable){}//dummy body
        public dynamic position;
+       public dynamic handle;
+       public dynamic element;
+       public dynamic handlers;
+       public dynamic app;
        public dynamic _initializeDrag(){return null;}//dummy return
        public dynamic _initializeResize(){return null;}//dummy return
        public dynamic _onDragMouseDown(dynamic evt){return null;}//dummy return

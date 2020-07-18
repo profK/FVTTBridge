@@ -1,11 +1,12 @@
 ﻿using System;
 using FVTTBridge.Bindings;
 using System.Reflection;
+using FVTTBridge;
 
 namespace ProjectGrinder
 {
 
-    public class PGActor : Actor
+    public class PGActor : BridgeActor
     {
         public PGActor(ActorGlue glue):base(glue)
         {

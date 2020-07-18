@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class ActorSheet{
+       public ActorSheet(params dynamic[] args){}//dummy body
        public dynamic token;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic id(){return null;}//dummy return

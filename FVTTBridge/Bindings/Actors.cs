@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Actors{
+       public Actors(params dynamic[] args){}//dummy body
        public dynamic tokens;
        [Name("object")]
        public dynamic jsobject(){return null;}//dummy return

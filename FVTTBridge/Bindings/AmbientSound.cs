@@ -9,8 +9,9 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class AmbientSound{
-       public dynamic howlId;
+       public AmbientSound(params dynamic[] args){}//dummy body
        public dynamic howl;
+       public dynamic howlId;
        public dynamic _createHowl(){return null;}//dummy return
        public dynamic embeddedName(){return null;}//dummy return
        public dynamic type(){return null;}//dummy return

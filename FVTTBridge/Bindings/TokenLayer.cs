@@ -9,9 +9,10 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class TokenLayer{
-       public dynamic _tabCycle;
-       public dynamic _lastWildcard;
+       public TokenLayer(){}//dummy body
        public dynamic _tabIndex;
+       public dynamic _lastWildcard;
+       public dynamic _tabCycle;
        public dynamic layerOptions(){return null;}//dummy return
        public dynamic hud(){return null;}//dummy return
        public dynamic ownedTokens(){return null;}//dummy return
@@ -20,7 +21,7 @@ namespace FVTTBridge.Bindings
        public dynamic dropActor(dynamic actor, dynamic tokenData){return null;}//dummy return
        public dynamic releaseAll(){return null;}//dummy return
        public dynamic selectObjects(dynamic optionsObject){return null;}//dummy return
-       public dynamic targetObjects(dynamic optionsObject, dynamic optionsObject){return null;}//dummy return
+       public dynamic targetObjects(dynamic optionsObject, dynamic optionsObject2){return null;}//dummy return
        public dynamic cycleTokens(dynamic forwards, dynamic reset){return null;}//dummy return
        public dynamic _getCycleOrder(){return null;}//dummy return
        public dynamic concludeAnimation(){return null;}//dummy return

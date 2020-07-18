@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class DragDrop{
+       public DragDrop(dynamic optionsObject){}//dummy body
        public dynamic callbacks;
        public dynamic permissions;
        public dynamic dragSelector;

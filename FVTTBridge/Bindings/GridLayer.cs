@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class GridLayer{
+       public GridLayer(){}//dummy body
        public dynamic highlight;
        public dynamic grid;
        public dynamic highlightLayers;

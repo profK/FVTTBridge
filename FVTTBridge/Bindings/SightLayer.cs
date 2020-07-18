@@ -9,16 +9,17 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class SightLayer{
-       public dynamic fogData;
-       public dynamic _blurDistance;
+       public SightLayer(){}//dummy body
        public dynamic _fogUpdated;
+       public dynamic _fogResolution;
+       public dynamic _initialized;
+       public dynamic _fogUpdates;
+       public dynamic _channels;
+       public dynamic _blurDistance;
        public dynamic _cull;
        public dynamic sources;
-       public dynamic _initialized;
-       public dynamic _fogResolution;
-       public dynamic _fogUpdates;
+       public dynamic fogData;
        public dynamic alphas;
-       public dynamic _channels;
        public dynamic tokenVision(){return null;}//dummy return
        public dynamic fogExploration(){return null;}//dummy return
        public dynamic blurDistance(){return null;}//dummy return

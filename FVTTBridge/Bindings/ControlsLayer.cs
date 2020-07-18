@@ -9,13 +9,14 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class ControlsLayer{
-       public dynamic doors;
-       public dynamic _rulers;
-       public dynamic select;
-       public dynamic effects;
+       public ControlsLayer(){}//dummy body
        public dynamic _cursors;
+       public dynamic select;
        public dynamic cursors;
        public dynamic rulers;
+       public dynamic _rulers;
+       public dynamic doors;
+       public dynamic effects;
        public dynamic ruler(){return null;}//dummy return
        public dynamic getRulerForUser(dynamic userId){return null;}//dummy return
        public dynamic draw(){return null;}//dummy return

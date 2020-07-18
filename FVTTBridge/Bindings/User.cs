@@ -9,9 +9,10 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class User{
+       public User(dynamic data, dynamic options){}//dummy body
+       public dynamic targets;
        public dynamic viewedScene;
        public dynamic active;
-       public dynamic targets;
        public dynamic config(){return null;}//dummy return
        public dynamic avatar(){return null;}//dummy return
        public dynamic character(){return null;}//dummy return

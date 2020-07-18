@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class DoorControl{
+       public DoorControl(dynamic wall){}//dummy body
        public dynamic wall;
        public dynamic draw(){return null;}//dummy return
        public dynamic drawIcon(){return null;}//dummy return

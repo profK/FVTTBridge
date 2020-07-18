@@ -8,11 +8,12 @@ namespace FVTTBridge.Bindings
         
     [External]
     [Namespace(false)]    
-    public class Actor:Entity{
+    public class Actor{
+       public Actor(params dynamic[] args){}//dummy body
        public dynamic _tokenImages;
        public dynamic token;
        public dynamic config(){return null;}//dummy return
-       public void prepareData(){}//dummy return
+       public dynamic prepareData(){return null;}//dummy return
        public dynamic prepareEmbeddedEntities(){return null;}//dummy return
        public dynamic img(){return null;}//dummy return
        public dynamic itemTypes(){return null;}//dummy return

@@ -9,15 +9,16 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Application{
-       public dynamic _element;
-       public dynamic _scrollPositions;
-       public dynamic _dragDrop;
-       public dynamic _tabs;
+       public Application(dynamic options){}//dummy body
        public dynamic position;
-       public dynamic _state;
        public dynamic appId;
+       public dynamic _state;
+       public dynamic _scrollPositions;
+       public dynamic _tabs;
+       public dynamic _dragDrop;
        public dynamic options;
        public dynamic _minimized;
+       public dynamic _element;
        public dynamic _createDragDropHandlers(){return null;}//dummy return
        public dynamic _createTabHandlers(){return null;}//dummy return
        public dynamic defaultOptions(){return null;}//dummy return

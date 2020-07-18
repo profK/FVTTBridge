@@ -9,8 +9,9 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class LightingLayer{
-       public dynamic _darkness;
+       public LightingLayer(params dynamic[] args){}//dummy body
        public dynamic _animating;
+       public dynamic _darkness;
        public dynamic layerOptions(){return null;}//dummy return
        public dynamic draw(){return null;}//dummy return
        public dynamic _drawLightingContainer(){return null;}//dummy return

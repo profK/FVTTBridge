@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class SceneNavigation{
+       public SceneNavigation(dynamic options){}//dummy body
        public dynamic _collapsed;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic scenes(){return null;}//dummy return

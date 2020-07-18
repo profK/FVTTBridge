@@ -9,17 +9,18 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class FilePicker{
-       public dynamic request;
+       public FilePicker(dynamic options){}//dummy body
        public dynamic button;
-       public dynamic type;
+       public dynamic request;
+       public dynamic extensions;
+       public dynamic field;
        public dynamic _filterTimeout;
-       public dynamic sources;
-       public dynamic _loaded;
        public dynamic results;
        public dynamic displayMode;
-       public dynamic extensions;
+       public dynamic sources;
+       public dynamic _loaded;
+       public dynamic type;
        public dynamic activeSource;
-       public dynamic field;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic _inferCurrentDirectory(dynamic target){return null;}//dummy return
        public dynamic _getExtensions(dynamic type){return null;}//dummy return

@@ -9,12 +9,13 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class SetupConfigurationForm{
-       public dynamic _progressButton;
-       public dynamic worlds;
+       public SetupConfigurationForm(dynamic optionsObject){}//dummy body
        public dynamic modules;
-       public dynamic currentWorld;
        public dynamic _tab;
        public dynamic systems;
+       public dynamic _progressButton;
+       public dynamic worlds;
+       public dynamic currentWorld;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic getData(dynamic options){return null;}//dummy return
        public dynamic tagPackageAvailability(dynamic pkg){return null;}//dummy return

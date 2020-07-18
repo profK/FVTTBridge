@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Dialog{
+       public Dialog(dynamic dialogData, dynamic options){}//dummy body
        public dynamic data;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic title(){return null;}//dummy return

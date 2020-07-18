@@ -9,10 +9,11 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class VideoHelper{
-       public dynamic locked;
+       public VideoHelper(){}//dummy body
        public dynamic pending;
-       public dynamic videos;
        public dynamic thumbs;
+       public dynamic locked;
+       public dynamic videos;
        public dynamic hasVideoExtension(dynamic src){return null;}//dummy return
        public dynamic play(dynamic video){return null;}//dummy return
        public dynamic awaitFirstGesture(){return null;}//dummy return

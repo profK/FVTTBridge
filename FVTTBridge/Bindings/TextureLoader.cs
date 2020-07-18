@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class TextureLoader{
+       public TextureLoader(){}//dummy body
        public dynamic cache;
        public dynamic loadSceneTextures(dynamic scene){return null;}//dummy return
        public dynamic load(dynamic sources, dynamic optionsObject){return null;}//dummy return

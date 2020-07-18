@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Playlist{
+       public Playlist(params dynamic[] args){}//dummy body
        public dynamic audio;
        public dynamic playbackOrder;
        public dynamic config(){return null;}//dummy return

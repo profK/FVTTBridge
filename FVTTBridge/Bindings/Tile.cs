@@ -9,9 +9,10 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class Tile{
-       public dynamic tile;
-       public dynamic texture;
+       public Tile(params dynamic[] args){}//dummy body
        public dynamic frame;
+       public dynamic texture;
+       public dynamic tile;
        public dynamic embeddedName(){return null;}//dummy return
        public dynamic aspectRatio(){return null;}//dummy return
        public dynamic draw(){return null;}//dummy return

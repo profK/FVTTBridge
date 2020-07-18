@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class BackgroundLayer{
+       public BackgroundLayer(){}//dummy body
        public dynamic img;
        public dynamic layerOptions(){return null;}//dummy return
        public dynamic source(){return null;}//dummy return

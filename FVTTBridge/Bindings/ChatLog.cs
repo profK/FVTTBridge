@@ -9,9 +9,10 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class ChatLog{
-       public dynamic _sentMessageIndex;
-       public dynamic _sentMessages;
+       public ChatLog(dynamic options){}//dummy body
        public dynamic _lastId;
+       public dynamic _sentMessages;
+       public dynamic _sentMessageIndex;
        public dynamic _lastMessageTime;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic collection(){return null;}//dummy return

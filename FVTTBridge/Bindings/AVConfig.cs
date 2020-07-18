@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class AVConfig{
+       public AVConfig(dynamic jsobject, dynamic options){}//dummy body
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic getData(){return null;}//dummy return
        public dynamic activateListeners(dynamic html){return null;}//dummy return

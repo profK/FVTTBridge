@@ -9,6 +9,7 @@ namespace FVTTBridge.Bindings
     [External]
     [Namespace(false)]    
     public class PlayerConfig{
+       public PlayerConfig(dynamic user, dynamic options){}//dummy body
        public dynamic user;
        public dynamic defaultOptions(){return null;}//dummy return
        public dynamic title(){return null;}//dummy return
