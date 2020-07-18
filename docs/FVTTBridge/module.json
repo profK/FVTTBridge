@@ -9,4 +9,4 @@
   "esmodules": [ ],
   "styles": [ "styles/simple.css" ],
   "download": "https://profk.github.io/FVTTBridge/FVVTBridge/FVTTBridge.zip",
-  "manifest":
+  "manifest": "https://profk.github.io/FVTTBridge/FVVTBridge/module.json"
