@@ -24,6 +24,9 @@ Retyped.howler
 Retyped.node
 Retyped.pixi
 
+## Setup
+** Make sure that the porperties of all files in the Resources tree are to to "copy if newer" **
+
 ## Usages Notes
 
 The bindings are all in the FVTTBridge.Bindings directory and namesapce.  All the bindings use dynamic parameters and return tyypes except for function delegeates which are of type Action.  This is because the bdinings are auto-generated from the actual FOundry javascript code and Javascript has no type information.  Refer to the
