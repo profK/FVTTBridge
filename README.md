@@ -13,4 +13,4 @@ to your foundry data folder and put it in your project post-build event:
 rmdir /s  /q C:\Users\jeffp\AppData\Local\FoundryVTT\Data\systems\$(TargetName) & C: & mkdir "\Users\jeffp\AppData\Local\FoundryVTT\Data\systems\$(TargetName)" &&  mkdir "\Users\jeffp\AppData\Local\FoundryVTT\Data\systems\$(TargetName)\module"  &&  xcopy  "$(TargetDir)bridge" "\Users\jeffp\AppData\Local\FoundryVTT\Data\systems\$(TargetName)\module" /E &&  xcopy "$(TargetDir)Resources"  "\Users\jeffp\AppData\Local\FoundryVTT\Data\systems\$(TargetName)"  /E
 </blockquote>
 
-See the example system.json in the test system FVTTBridgeTest to see how to refernce the runtime
+See the example system.json in the test system FVTTBridgeTest to see how to reference the runtime
