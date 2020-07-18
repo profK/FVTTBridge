@@ -15,7 +15,7 @@ rmdir /s  /q C:\Users\jeffp\AppData\Local\FoundryVTT\Data\systems\$(TargetName) 
 
 See the example system.json in the test system FVTTBridgeTest to see how to reference the runtime
 
-## Reqwirements
+## Requirements
 After installing Bridge.NET, get the following packjages for your project from nuget
 Bridge.jQuery
 
