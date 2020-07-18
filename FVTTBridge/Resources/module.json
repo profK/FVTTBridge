@@ -8,6 +8,6 @@
   "scripts": [ "module/bridge.js", "module/bridge_console.js", "module/bridge.meta.js", "module/newtonsoft.json.js", "module/ActorGlue.js", "module/ActorSheetGlue.js", "module/FVTTBridge.js" ],
   "esmodules": [ ],
   "styles": [ "styles/simple.css" ],
-  "download": "https://profk.github.io/FVTTBridge/FVVTBridge/FVTTBridge.zip",
-  "manifest": "https://profk.github.io/FVTTBridge/FVVTBridge/module.json"
+  "download": "https://profk.github.io/FVTTBridge/FVTTBridge/FVTTBridge.zip",
+  "manifest": "https://profk.github.io/FVTTBridge/FVTTBridge/module.json"
 }
