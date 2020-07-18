@@ -18,7 +18,11 @@ See the example system.json in the test system FVTTBridgeTest to see how to refe
 ## Requirements
 After installing Bridge.NET, get the following packjages for your project from nuget
 Bridge.jQuery
-
+Retyped.es2015
+Retyped.es5
+Retyped.howler
+Retyped.node
+Retyped.pixi
 
 ## Usages Notes
 
