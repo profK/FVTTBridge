@@ -15,6 +15,11 @@ rmdir /s  /q C:\Users\jeffp\AppData\Local\FoundryVTT\Data\systems\$(TargetName) 
 
 See the example system.json in the test system FVTTBridgeTest to see how to reference the runtime
 
+## Reqwirements
+After installing Bridge.NET, get the following packjages for your project from nuget
+Bridge.jQuery
+
+
 ## Usages Notes
 
 The bindings are all in the FVTTBridge.Bindings directory and namesapce.  All the bindings use dynamic parameters and return tyypes except for function delegeates which are of type Action.  This is because the bdinings are auto-generated from the actual FOundry javascript code and Javascript has no type information.  Refer to the
