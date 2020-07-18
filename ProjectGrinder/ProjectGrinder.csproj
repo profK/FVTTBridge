@@ -101,6 +101,11 @@
     <Error Condition="!Exists('..\packages\Bridge.Min.17.10.1\build\Bridge.Min.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Bridge.Min.17.10.1\build\Bridge.Min.targets'))" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>rmdir /s  /q C:\Users\jeffp\AppData\Local\FoundryVTT\Data\systems\$(TargetName) &amp; C: &amp; mkdir "\Users\jeffp\AppData\Local\FoundryVTT\Data\systems\$(TargetName)" &amp;&amp;  mkdir "\Users\jeffp\AppData\Local\FoundryVTT\Data\systems\$(TargetName)\module"  &amp;&amp;  xcopy  "$(TargetDir)bridge" "\Users\jeffp\AppData\Local\FoundryVTT\Data\systems\$(TargetName)\module" /E &amp;&amp;  xcopy "$(TargetDir)Resources"  "\Users\jeffp\AppData\Local\FoundryVTT\Data\systems\$(TargetName)"  /E</PostBuildEvent>
+    <PostBuildEvent>rmdir /s  /q C:\Users\jeffp\AppData\Local\FoundryVTT\Data\systems\$(TargetName) 
+ C: 
+mkdir "\Users\jeffp\AppData\Local\FoundryVTT\Data\systems\$(TargetName)" 
+mkdir "\Users\jeffp\AppData\Local\FoundryVTT\Data\systems\$(TargetName)\module"   
+copy  "$(TargetDir)bridge\$(TargetName).js" "\Users\jeffp\AppData\Local\FoundryVTT\Data\systems\$(TargetName)\module" 
+xcopy "$(TargetDir)Resources"  "\Users\jeffp\AppData\Local\FoundryVTT\Data\systems\$(TargetName)"  /E</PostBuildEvent>
   </PropertyGroup>
 </Project>
